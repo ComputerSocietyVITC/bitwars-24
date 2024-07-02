@@ -1,5 +1,5 @@
 import React from "react";
-import TextButton from "./TextButton";
+import TextButton from "../buttons/TextButton";
 import Logo from "./Logo";
 
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               <TextButton href="#team">Our Team</TextButton>
               <TextButton href="#events">Events</TextButton>
               <TextButton href="#sponsors">Sponsors</TextButton>
-              <TextButton href="#faq">FAQ</TextButton>
+              <TextButton href="#faq">FAQs</TextButton>
             </ul>
             <div className="hidden md:block"></div>
           </div>
