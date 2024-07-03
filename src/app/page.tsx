@@ -1,10 +1,12 @@
 import Image from "next/image";
+import Timer from "@/components/timer/Timer"
 
 export default function Home() {
   return (
     <>
       <div className="container mx-auto px-4">
         <h1>Bitwars-24</h1>
+        <Timer />
         <div className="w-full h-screen"></div>
         <p>
           What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
