@@ -27,29 +27,29 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white inline-block mt-[25px] p-10 text-center width-[400px]">
+    <div className="w-full bg-gradient-to-r from-[#0D1732] via-[#0D1732] to-[#0D1732] rounded-3xl skew-x-[-25deg] text-white text-8xl inline-block mt-[-20px] text-center p-8">
       <div className="w-1/4 float-left">
-        <div className="border-r-1 border-r-solid border-r-[rgba(255, 255, 255, 0.2)] p-10 font-medium">
+        <div className="skew-x-[25deg] font-extrabold">
           <p id="day">{days < 10 ? "0" + days : days}</p>
-          <span className="font-14px]">Days</span>
+          <span className="text-3xl font-light">DAYS</span>
         </div>
       </div>
       <div className="w-1/4 float-left">
-        <div className="border-r-1 border-r-solid border-r-[rgba(255, 255, 255, 0.2)] p-10 font-medium">
+        <div className="skew-x-[25deg] font-extrabold">
           <p id="hour">{hours < 10 ? "0" + hours : hours}</p>
-          <span className="font-[14px]">Hours</span>
+          <span className="text-3xl font-light">HOURS</span>
         </div>
       </div>
       <div className="w-1/4 float-left">
-        <div className="border-r-1 border-r-solid border-r-[rgba(255, 255, 255, 0.2)] p-10 font-medium">
+        <div className="skew-x-[25deg] font-extrabold">
           <p id="minute">{minutes < 10 ? "0" + minutes : minutes}</p>
-          <span className="font-[14px]">Minutes</span>
+          <span className="text-3xl font-light">MINUTES</span>
         </div>
       </div>
       <div className="w-1/4 float-left">
-        <div className="border-r-1 border-r-solid border-r-[rgba(255, 255, 255, 0.2)] p-10 font-medium">
+        <div className="skew-x-[25deg] font-extrabold">
           <p id="second">{seconds < 10 ? "0" + seconds : seconds}</p>
-          <span className="font-[14px]">Seconds</span>
+          <span className="text-3xl font-light">SECONDS</span>
         </div>
       </div>
     </div>

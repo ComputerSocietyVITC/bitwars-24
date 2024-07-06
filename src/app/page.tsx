@@ -6,6 +6,13 @@ export default function Home() {
     <>
       <div className="container mx-auto px-4">
         <h1>Bitwars-24</h1>
+        <Image
+          src="/bitwarsLogo.png"
+          alt="logo"
+          height={600}
+          width={600}
+          className="z-30 items-center justify-center align-center mx-auto mt-24"
+        />
         <Timer />
         <div className="w-full h-screen"></div>
         <p>
