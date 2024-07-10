@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 
 const Timer = () => {
 
@@ -21,35 +20,37 @@ const Timer = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => getTime(deadline), 1000);
+    const interval = setInterval(() => getTime(), 1000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full bg-gradient-to-r from-[#0D1732] via-[#0D1732] to-[#0D1732] rounded-3xl skew-x-[-25deg] text-white text-8xl inline-block mt-[-20px] text-center p-8">
-      <div className="w-1/4 float-left">
-        <div className="skew-x-[25deg] font-extrabold">
-          <p id="day">{days < 10 ? "0" + days : days}</p>
-          <span className="text-3xl font-light">DAYS</span>
+    <div className="w-full h-full bg-gradient-to-r from-[#14357A] via-[#1088AC] to-[#1083A9] rounded-3xl skew-x-[-25deg] p-1">
+      <div className="h-fit w-full bg-gradient-to-r from-[#0D1732] via-[#0D1732] to-[#0D1732] rounded-3xl text-white text-8xl inline-block text-center p-8">
+        <div className="w-1/4 float-left">
+          <div className="skew-x-[25deg] font-extrabold">
+            <p id="day">{days < 10 ? "0" + days : days}</p>
+            <span className="text-3xl font-light">DAYS</span>
+          </div>
         </div>
-      </div>
-      <div className="w-1/4 float-left">
-        <div className="skew-x-[25deg] font-extrabold">
-          <p id="hour">{hours < 10 ? "0" + hours : hours}</p>
-          <span className="text-3xl font-light">HOURS</span>
+        <div className="w-1/4 float-left">
+          <div className="skew-x-[25deg] font-extrabold">
+            <p id="hour">{hours < 10 ? "0" + hours : hours}</p>
+            <span className="text-3xl font-light">HOURS</span>
+          </div>
         </div>
-      </div>
-      <div className="w-1/4 float-left">
-        <div className="skew-x-[25deg] font-extrabold">
-          <p id="minute">{minutes < 10 ? "0" + minutes : minutes}</p>
-          <span className="text-3xl font-light">MINUTES</span>
+        <div className="w-1/4 float-left">
+          <div className="skew-x-[25deg] font-extrabold">
+            <p id="minute">{minutes < 10 ? "0" + minutes : minutes}</p>
+            <span className="text-3xl font-light">MINUTES</span>
+          </div>
         </div>
-      </div>
-      <div className="w-1/4 float-left">
-        <div className="skew-x-[25deg] font-extrabold">
-          <p id="second">{seconds < 10 ? "0" + seconds : seconds}</p>
-          <span className="text-3xl font-light">SECONDS</span>
+        <div className="w-1/4 float-left">
+          <div className="skew-x-[25deg] font-extrabold">
+            <p id="second">{seconds < 10 ? "0" + seconds : seconds}</p>
+            <span className="text-3xl font-light">SECONDS</span>
+          </div>
         </div>
       </div>
     </div>
