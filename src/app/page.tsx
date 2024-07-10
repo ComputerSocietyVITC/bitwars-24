@@ -1,9 +1,15 @@
 import Image from "next/image";
+import { Poppins } from "next/font/google";
 import Timer from "@/components/timer/Timer"
+
+const poppins = Poppins({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 export default function Home() {
   return (
-    <>
+    <main className={poppins.className}>
       <div className="container mx-auto px-4">
         <h1>Bitwars-24</h1>
         <Image
@@ -14,7 +20,10 @@ export default function Home() {
           className="z-30 items-center justify-center align-center mx-auto mt-24"
         />
         <Timer />
-        <div className="w-full h-screen"></div>
+        <div className="max-w-screen-2xl h-screen">
+          <p className="mt-24 font-[1000] text-5xl">ABOUT US</p>
+          <div className="w-2/4 h-80 ml-20 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_40px_40px,_#104456_0%,_#100e17_100%_)] text-center"></div>
+        </div>
         <p>
           What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
           and typesetting industry. Lorem Ipsum has been the industrys standard
@@ -32,6 +41,6 @@ export default function Home() {
           look like readable English.
         </p>
       </div>
-    </>
+    </main>
   );
 }
