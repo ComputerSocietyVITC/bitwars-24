@@ -1,11 +1,11 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
-import Timer from "@/components/timer/Timer"
+import Timer from "@/components/timer/Timer";
 
 const poppins = Poppins({
-  weight: '400',
-  subsets: ['latin'],
-})
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
   return (
@@ -15,14 +15,20 @@ export default function Home() {
         <Image
           src="/bitwarsLogo.png"
           alt="logo"
-          height={600}
-          width={600}
+          height={500}
+          width={500}
           className="z-30 items-center justify-center align-center mx-auto mt-24"
         />
         <Timer />
-        <div className="max-w-screen-2xl h-screen">
-          <p className="mt-24 font-[1000] text-5xl">ABOUT US</p>
-          <div className="w-2/4 h-80 ml-20 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_40px_40px,_#104456_0%,_#100e17_100%_)] text-center"></div>
+        <div className="w-full h-screen">
+          <p className="mt-24 ml-36 font-extrabold text-5xl">ABOUT US</p>
+          <div className="w-2/4 h-80 ml-48 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_10px_10px,_#104456_0%,_#100e17_100%_)] text-center">
+            <p className="text-white">Lorem ipsum dolor set</p>
+          </div>
+
+          <p className="mt-24 text-center font-extrabold text-5xl">
+            Our Event Showcase
+          </p>
         </div>
         <p>
           What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
