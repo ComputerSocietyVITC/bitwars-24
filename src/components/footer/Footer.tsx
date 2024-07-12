@@ -1,11 +1,13 @@
+"use client";
 import TextButton from "../buttons/TextButton";
 import SocialMediaGrid from "./SocialsGrid";
+import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpLong } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <>
       <footer className="text-white p-8">
