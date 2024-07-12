@@ -26,8 +26,9 @@ const socialMediaLinks = [
 const SocialMediaGrid: React.FC = () => {
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-      {socialMediaLinks.map((link) => (
+      {socialMediaLinks.map((link, index) => (
         <Link
+          key={index}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
