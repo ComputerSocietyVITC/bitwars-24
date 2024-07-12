@@ -20,7 +20,7 @@ export default function Home() {
           className="z-30 items-center justify-center align-center mx-auto mt-24"
         />
         <Timer />
-        <div className="w-full h-screen">
+        <div className="w-full h-screen" id="about">
           <p className="mt-24 ml-36 font-extrabold text-5xl">ABOUT US</p>
           <div className="w-2/4 h-80 ml-48 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_10px_10px,_#104456_0%,_#100e17_100%_)] text-center">
             <p className="text-white">Lorem ipsum dolor set</p>

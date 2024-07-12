@@ -1,27 +1,23 @@
-"use client";
 import TextButton from "../buttons/TextButton";
 import SocialMediaGrid from "./SocialsGrid";
-import React from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpLong } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
-const Footer: React.FC = () => {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+const Footer = () => {
   return (
     <>
       <footer className="text-white p-8">
         {/* Scroll to top button and line */}
         <div className="flex justify-center items-center mb-4">
           <hr className="absolute w-4/5 h-1 border-gray-700 bg-gradient-to-r from-[#0F1D29] via-[#114554] to-[#0F1D29] opacity-50" />
-          <button
-            onClick={scrollToTop}
+          <Link
+            href="#top"
             className="relative z-10 flex items-center justify-center bg-[#0B1E3E] rounded-full w-10 h-10 hover:bg-blue-500 transition-all duration-300"
           >
             <FontAwesomeIcon icon={faArrowUpLong} size="lg" />
-          </button>
+          </Link>
         </div>
 
         {/* Footer content */}
