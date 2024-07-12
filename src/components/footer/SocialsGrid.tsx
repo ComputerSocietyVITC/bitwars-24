@@ -1,30 +1,40 @@
-
-import React from 'react';
-import SocialButton from '../buttons/SocialButton';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLinkedin,
+  faTwitter,
+  faInstagram,
+  faTelegram,
+  faDiscord,
+  faGithub,
+  faYoutube,
+  faMedium,
+} from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 const socialMediaLinks = [
-  { href: 'https://linkedin.com', imagePath: '/linkedin.png', altText: 'LinkedIn' },
-  { href: 'https://twitter.com', imagePath: '/twitter.png', altText: 'Twitter' },
-  { href: 'https://instagram.com', imagePath: '/instagram.png', altText: 'Instagram' },
-  { href: 'https://telegram.com', imagePath: '/telegram.png', altText: 'Telegram' },
-  { href: 'https://discord.com', imagePath: '/discord.png', altText: 'Discord' },
-  { href: 'https://github.com', imagePath: '/github.png', altText: 'Github', width: 40, height: 40 },
-  { href: 'https://youtube.com', imagePath: '/youtube.png', altText: 'Youtube', width: 40, height: 40 },
-  { href: 'https://medium.com', imagePath: '/medium.png', altText: 'Medium' },
+  { href: "https://linkedin.com", icon: faLinkedin },
+  { href: "https://twitter.com", icon: faTwitter },
+  { href: "https://instagram.com", icon: faInstagram },
+  { href: "https://telegram.com", icon: faTelegram },
+  { href: "https://discord.com", icon: faDiscord },
+  { href: "https://github.com", icon: faGithub },
+  { href: "https://youtube.com", icon: faYoutube },
+  { href: "https://medium.com", icon: faMedium },
 ];
 
 const SocialMediaGrid: React.FC = () => {
   return (
     <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-      {socialMediaLinks.map((link, index) => (
-        <SocialButton
-          key={index}
+      {socialMediaLinks.map((link) => (
+        <Link
           href={link.href}
-          imagePath={link.imagePath}
-          altText={link.altText}
-          width={link.width ? link.width : 24}
-          height={link.height ? link.width : 24}
-        />
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center bg-[#0B1E3E] rounded-lg w-12 h-12 hover:bg-blue-500 transition-all duration-300"
+        >
+          <FontAwesomeIcon icon={link.icon} size="lg" />
+        </Link>
       ))}
     </div>
   );
