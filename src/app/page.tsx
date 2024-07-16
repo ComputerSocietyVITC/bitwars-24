@@ -20,19 +20,19 @@ export default function Home() {
           className="z-30 items-center justify-center align-center mx-auto mt-24"
         />
         <Timer />
-<<<<<<< HEAD
-        <div className="w-full h-screen" id="about">
-=======
-        <div className="w-full">
->>>>>>> 21b1d44 (feat: added image display and events section.)
-          <p className="mt-24 ml-36 font-extrabold text-5xl">ABOUT US</p>
-          <div className="w-2/4 h-80 ml-48 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_10px_10px,_#104456_0%,_#100e17_100%_)] text-center">
-            <p className="text-white">Lorem ipsum dolor set</p>
+        <div className="w-full max-h-screen mb-24" id="about">
+          <div className="w-full">
+            <p className="mt-24 ml-36 font-extrabold text-5xl">ABOUT US</p>
+            <div className="w-2/4 h-80 ml-48 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_10px_10px,_#104456_0%,_#100e17_100%_)] text-center">
+              <p className="text-white">Lorem ipsum dolor set</p>
+            </div>
           </div>
-
-          <p className="mt-24 text-center font-extrabold text-5xl">
+        </div>
+        <div className="w-full max-h-screen" id="events">
+          <p className="text-center font-extrabold text-5xl">
             Our Event Showcase
           </p>
+
           <div className="flex flex-row w-full">
             <section className="h-min flex items-left pt-12 pl-12 pr-24 pb-48 my-12 mr-24">
               <section className="flex flex-col mx-auto">
@@ -62,26 +62,9 @@ export default function Home() {
                 />
               </section>
             </section>
-
             <section className="flex w-2/4 h-80 mt-12 rounded-2xl bg-[radial-gradient(_farthest-corner_at_60px_60px,_#100e17_0%,_#104456_100%)] text-center"></section>
           </div>
         </div>
-        <p>
-          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
-          and typesetting industry. Lorem Ipsum has been the industrys standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book. It has survived
-          not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using Content here, content here, making it
-          look like readable English.
-        </p>
       </div>
     </main>
   );
