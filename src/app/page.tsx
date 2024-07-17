@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <main className={poppins.className}>
       <div className="container mx-auto px-4 text-white">
-        <h1>Bitwars-24</h1>
         <Image
           src="/bitwarsLogo.png"
           alt="logo"
@@ -20,6 +19,8 @@ export default function Home() {
           width={500}
           className="z-30 items-center justify-center align-center mx-auto mt-24"
         />
+
+        {/* Timer Section */}
         <Timer />
         <div className="w-full max-h-screen mb-24" id="about">
           <div className="w-full">
@@ -29,6 +30,8 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Events Section */}
         <div className="w-full max-h-screen" id="events">
           <p className="text-center font-extrabold text-5xl">
             Our Event Showcase
@@ -67,7 +70,33 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full max-h-screen" id="faq">
+        {/* Sponsors Section */}
+        <div className="w-full max-h-screen" id="sponsors">
+          <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
+          <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-24 text-center border-[#104456] border-2">
+            <div>
+              <p>Sponsor 1</p>
+            </div>
+            <div>
+              <p>Sponsor 2</p>
+            </div>
+            <div>
+              <p>Sponsor 3</p>
+            </div>
+            <div>
+              <p>Sponsor 4</p>
+            </div>
+            <div>
+              <p>Sponsor 5</p>
+            </div>
+            <div>
+              <p>Sponsor 6</p>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full max-h-screen py-24" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
             Frequently Asked Questions
           </p>
