@@ -7,11 +7,23 @@ import {
 
 const FAQAccordion = () => {
   return (
-    <Accordion type="single" collapsible>
+    <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
-        <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+        <AccordionTrigger className="text-white">Lorem ipsum</AccordionTrigger>
+        <AccordionContent className="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-2">
+        <AccordionTrigger className="text-white">Lorem ipsum</AccordionTrigger>
+        <AccordionContent className="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-3">
+        <AccordionTrigger className="text-white">Lorem ipsum</AccordionTrigger>
+        <AccordionContent className="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </AccordionContent>
       </AccordionItem>
     </Accordion>
