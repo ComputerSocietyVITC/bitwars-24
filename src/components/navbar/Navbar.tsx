@@ -2,14 +2,19 @@ import React from "react";
 import TextButton from "../buttons/TextButton";
 import IconButton from "../buttons/IconButton";
 
-
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 sticky top-0">
+      <div className="w-full h-20 top-0">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-20">
-            <IconButton href="/" src="/logo.png" alt="Logo" width={60} height={64} />
+            <IconButton
+              href="/"
+              src="/logo.png"
+              alt="Logo"
+              width={60}
+              height={64}
+            />
             <button
               type="button"
               className="inline-flex items-center md:hidden"
