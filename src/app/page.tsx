@@ -11,7 +11,7 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main className={poppins.className}>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 text-white">
         <h1>Bitwars-24</h1>
         <Image
           src="/bitwarsLogo.png"
@@ -65,8 +65,13 @@ export default function Home() {
             </section>
             <section className="flex w-2/4 h-80 mt-12 rounded-2xl bg-[radial-gradient(_farthest-corner_at_60px_60px,_#100e17_0%,_#104456_100%)] text-center"></section>
           </div>
+        </div>
 
-          <div className="flex flex-col items-center text-white justify-center">
+        <div className="w-full max-h-screen" id="faq">
+          <p className="text-center font-extrabold text-5xl py-24">
+            Frequently Asked Questions
+          </p>
+          <div className="items-center justify-center">
             <FAQAccordion />
           </div>
         </div>
