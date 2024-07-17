@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Timer from "@/components/timer/Timer";
+import FAQAccordion from "@/components/accordion/FAQAccordion";
 
 const poppins = Poppins({
   weight: "400",
@@ -63,6 +64,10 @@ export default function Home() {
               </section>
             </section>
             <section className="flex w-2/4 h-80 mt-12 rounded-2xl bg-[radial-gradient(_farthest-corner_at_60px_60px,_#100e17_0%,_#104456_100%)] text-center"></section>
+          </div>
+
+          <div className="flex flex-col items-center text-white justify-center">
+            <FAQAccordion />
           </div>
         </div>
       </div>
