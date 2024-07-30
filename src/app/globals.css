@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  background: linear-gradient(
+    180deg,
+    #0c0b12 -3.27%,
+    #0c0b12 15.89%,
+    #0c0b12 35.55%
+  );
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,4 +75,61 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.accord {
+  position: relative;
+}
+
+.accord-cont {
+  background: linear-gradient(268.63deg, #0c2430 3.83%, #0b1524 99.67%);
+  width: 100%;
+  min-height: 110px;
+  top: 3431.5px;
+  left: 235px;
+  gap: 0px;
+  opacity: 0px;
+  border-bottom: 3px solid;
+
+  border-image-source: linear-gradient(
+    270.01deg,
+    #0f1d29 23.04%,
+    #114554 67.69%,
+    #101019 90.29%
+  );
+}
+
+.accord-lines {
+  background: linear-gradient(
+    270.01deg,
+    #0f1d29 23.04%,
+    #114554 67.69%,
+    #101019 90.29%
+  );
+}
+
+.accord-vlines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px;
+
+  background: linear-gradient(
+    #0f1d29 23.04%,
+    #114554 67.69%,
+    #101019 90.29%
+  );
+}
+
+.accord-velines {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px;
+
+  background: linear-gradient(
+    #0f1d29 23.04%,
+    #114554 67.69%,
+    #101019 90.29%
+  );
 }
