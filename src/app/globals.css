@@ -114,11 +114,7 @@ html {
   left: 0;
   border: 2px;
 
-  background: linear-gradient(
-    #0f1d29 23.04%,
-    #114554 67.69%,
-    #101019 90.29%
-  );
+  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
 }
 
 .accord-velines {
@@ -127,9 +123,9 @@ html {
   right: 0;
   border: 2px;
 
-  background: linear-gradient(
-    #0f1d29 23.04%,
-    #114554 67.69%,
-    #101019 90.29%
-  );
+  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
+}
+
+.timer-bg {
+  background: linear-gradient(90.13deg, #0d1732 3.26%, #0c2530 61.13%);
 }
