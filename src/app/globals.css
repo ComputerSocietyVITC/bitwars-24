@@ -125,3 +125,7 @@ html {
 
   background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
 }
+
+.timer-bg {
+  background: linear-gradient(90.13deg, #0d1732 3.26%, #0c2530 61.13%);
+}

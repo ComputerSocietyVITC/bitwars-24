@@ -17,9 +17,13 @@ export default function Home() {
           alt="logo"
           height={500}
           width={500}
-          className="z-30 items-center justify-center align-center mx-auto mt-24"
+          className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
         />
-
+        <img
+          src="/two.png"
+          alt="2.0"
+          className="absolute top-[63%] left-[52%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
+        />
         {/* Timer Section */}
         <Timer />
         <div className="w-full max-h-screen mb-24" id="about">
