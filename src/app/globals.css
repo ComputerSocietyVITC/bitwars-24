@@ -88,7 +88,7 @@ html {
   top: 3431.5px;
   left: 235px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1;
   border-bottom: 3px solid;
 
   border-image-source: linear-gradient(
@@ -114,11 +114,7 @@ html {
   left: 0;
   border: 2px;
 
-  background: linear-gradient(
-    #0f1d29 23.04%,
-    #114554 67.69%,
-    #101019 90.29%
-  );
+  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
 }
 
 .accord-velines {
@@ -127,9 +123,5 @@ html {
   right: 0;
   border: 2px;
 
-  background: linear-gradient(
-    #0f1d29 23.04%,
-    #114554 67.69%,
-    #101019 90.29%
-  );
+  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
 }
