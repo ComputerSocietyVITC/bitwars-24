@@ -26,11 +26,21 @@ export default function Home() {
         />
         {/* Timer Section */}
         <Timer />
-        <div className="w-full max-h-screen mb-24" id="about">
-          <div className="w-full">
-            <p className="mt-24 ml-36 font-extrabold text-5xl">ABOUT US</p>
-            <div className="w-2/4 h-80 ml-48 mt-6 rounded-2xl bg-[radial-gradient(_farthest-corner_at_10px_10px,_#104456_0%,_#100e17_100%_)] text-center">
-              <p className="text-white">Lorem ipsum dolor set</p>
+        <div className="w-full" id="about">
+          <div className="w-full flex flex-col mb-24 lg:ml-12">
+            <p className="mt-24  font-extrabold text-5xl">ABOUT US</p>
+            <div className="w-full sm:w-2/3 lg:w-2/4 lg:h-80 ml-6 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
+              <p className="text-white text-start p-8 sm:p-12 md:p-12 lg:p-12">
+                VIT Chennai, established in 2010, is a leading private
+                institution in Tamil Nadu, India, offering top-tier engineering
+                programs with a focus on research, industry collaboration, and
+                practical learning for successful technical careers. IEEE CS
+                VITC, established in 2019 at VIT Chennai, where innovation
+                thrives and technology excels. As a premier branch of IEEE and
+                its Computer Society, we are committed to driving breakthroughs
+                in computer science and connecting visionary tech enthusiasts
+                globally.
+              </p>
             </div>
           </div>
         </div>
