@@ -31,7 +31,7 @@ export default function Home() {
             <p className="mt-24  font-extrabold text-5xl text-center md:text-start">
               ABOUT US
             </p>
-            <div className="w-full sm:w-2/3 lg:w-2/4 lg:h-80 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
+            <div className="w-full sm:w-2/3 lg:w-2/4 lg:h-72 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
               <p className="text-white text-start p-8 sm:p-12 md:p-12 lg:p-12">
                 VIT Chennai, established in 2010, is a leading private
                 institution in Tamil Nadu, India, offering top-tier engineering
