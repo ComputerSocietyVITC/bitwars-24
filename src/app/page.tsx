@@ -84,21 +84,21 @@ export default function Home() {
             </section>
             <div className="flex flex-col w-full sm:w-2/3 md:mr-10 sm:ml-24 md:ml-0 lg:w-2/4 h-4/5 sm:mt-12 md:mt-12 rounded-2xl event-content p-8 sm:p-12 md:p-12 lg:p-12 overflow-auto">
               <p className="text-white text-start">
-                BITWARS 2.0, VIT Chennai’s second edition of the biggest offline
-                Competitive Programming Event, is set to revolutionize
+                BITWARS 2.0, VIT Chennai&apos;s second edition of the biggest
+                offline Competitive Programming Event, is set to revolutionize
                 Competitive Programming Culture. Hosted by IEEE CS, it features
                 workshops, speeches, and Coding Contest. Network with brilliant
-                minds and try to get them for PPI’s opportunities. Competitions
-                will challenge participants to solve algorithmic problems. Join
-                us for a transformative experience.
+                minds and try to get them for PPI&apos;s opportunities.
+                Competitions will challenge participants to solve algorithmic
+                problems. Join us for a transformative experience.
               </p>
               <p className="text-white text-start my-2">
                 <span className="font-bold">Overview</span> <br />
                 1. Competitive coding event where participants competed for the
-                top title Challenged participants' coding skills and strategic
-                thinking <br />
-                2. Featured an "Algorithm Showdown" by Mr. Manas Tiwari, SWE
-                @Microsoft <br />
+                top title Challenged participants&apos; coding skills and
+                strategic thinking <br />
+                2. Featured an &quot;Algorithm Showdown&quot; by Mr. Manas
+                Tiwari, SWE @Microsoft <br />
                 3. Competitive coding battleground with over 419 participants
               </p>
             </div>
