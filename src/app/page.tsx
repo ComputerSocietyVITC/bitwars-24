@@ -19,7 +19,7 @@ export default function Home() {
           width={500}
           className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
         />
-        <img
+        <Image
           src="/two.png"
           alt="2.0"
           className="absolute top-[63%] left-[52%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
