@@ -27,9 +27,11 @@ export default function Home() {
         {/* Timer Section */}
         <Timer />
         <div className="w-full" id="about">
-          <div className="w-full flex flex-col mb-24 lg:ml-12">
-            <p className="mt-24  font-extrabold text-5xl">ABOUT US</p>
-            <div className="w-full sm:w-2/3 lg:w-2/4 lg:h-80 ml-6 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
+          <div className="w-full flex flex-col mb-24 ml-12">
+            <p className="mt-24  font-extrabold text-5xl text-center md:text-start">
+              ABOUT US
+            </p>
+            <div className="w-full sm:w-2/3 lg:w-2/4 lg:h-80 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
               <p className="text-white text-start p-8 sm:p-12 md:p-12 lg:p-12">
                 VIT Chennai, established in 2010, is a leading private
                 institution in Tamil Nadu, India, offering top-tier engineering
@@ -46,13 +48,13 @@ export default function Home() {
         </div>
 
         {/* Events Section */}
-        <div className="w-full max-h-screen" id="events">
+        <div className="w-full mb-11 ml-12" id="events">
           <p className="text-center font-extrabold text-5xl">
             Our Event Showcase
           </p>
 
-          <div className="flex flex-row w-full">
-            <section className="h-min flex items-left pt-12 pl-12 pr-24 pb-48 my-12 mr-24">
+          <div className="flex flex-col md:flex-row lg:w-full">
+            <section className=" flex items-left pt-12 pl-12 pr-24 my-12 mr-24">
               <section className="flex flex-col mx-auto">
                 <section className="flex">
                   <Image
@@ -80,12 +82,31 @@ export default function Home() {
                 />
               </section>
             </section>
-            <section className="flex w-2/4 h-80 mt-12 rounded-2xl bg-[radial-gradient(_farthest-corner_at_60px_60px,_#100e17_0%,_#104456_100%)] text-center"></section>
+            <div className="flex flex-col w-full sm:w-2/3 md:mr-10 sm:ml-24 md:ml-0 lg:w-2/4 h-4/5 sm:mt-12 md:mt-12 rounded-2xl event-content p-8 sm:p-12 md:p-12 lg:p-12 overflow-auto">
+              <p className="text-white text-start">
+                BITWARS 2.0, VIT Chennai’s second edition of the biggest offline
+                Competitive Programming Event, is set to revolutionize
+                Competitive Programming Culture. Hosted by IEEE CS, it features
+                workshops, speeches, and Coding Contest. Network with brilliant
+                minds and try to get them for PPI’s opportunities. Competitions
+                will challenge participants to solve algorithmic problems. Join
+                us for a transformative experience.
+              </p>
+              <p className="text-white text-start my-2">
+                <span className="font-bold">Overview</span> <br />
+                1. Competitive coding event where participants competed for the
+                top title Challenged participants' coding skills and strategic
+                thinking <br />
+                2. Featured an "Algorithm Showdown" by Mr. Manas Tiwari, SWE
+                @Microsoft <br />
+                3. Competitive coding battleground with over 419 participants
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Sponsors Section */}
-        <div className="w-full max-h-screen" id="sponsors">
+        <div className="w-full" id="sponsors">
           <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
           <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-24 text-center border-[#104456] border-2">
             <div>
@@ -110,7 +131,7 @@ export default function Home() {
         </div>
 
         {/* FAQ Section */}
-        <div className="w-full max-h-screen py-24" id="faq">
+        <div className="w-full py-24" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
             Frequently Asked Questions
           </p>
