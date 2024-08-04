@@ -9,7 +9,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer className="text-white p-8">
+      <footer className="text-white p-8 w-full">
         {/* Scroll to top button and line */}
         <div className="flex justify-center items-center mb-4">
           <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
@@ -22,16 +22,16 @@ const Footer = () => {
         </div>
 
         {/* Footer content */}
-        <div className="flex md:flex-row flex-col justify-center gap-40">
+        <div className="flex md:flex-row flex-col justify-center">
           {/* IEEE logo */}
-          <div className="flex items-center justify-center basis-1/3">
+          <div className="flex items-center justify-center basis-1/3 mr-10">
             <Image src="/logo2.png" alt="logo2" width={280} height={80} />
           </div>
 
           {/* Menu */}
-          <div className="space-y-4 justify-center items-center basis-1/6">
-            <h3 className="text-xl font-semibold items-center">Menu</h3>
-            <ul className="space-y-2 text-left">
+          <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/6 mr-10">
+            <h3 className="text-xl font-semibold items-center md:text-left">Menu</h3>
+            <ul className="space-y-2 text-center md:text-left md:ml-3">
               <TextButton href="#about">About</TextButton>
               <TextButton href="#team">Our Team</TextButton>
               <TextButton href="#events">Events</TextButton>
@@ -41,9 +41,9 @@ const Footer = () => {
           </div>
 
           {/* VITC address */}
-          <div className="space-y-4 text-center justify-center basis-1/5">
+          <div className="space-y-4 flex items-center flex-col justify-center basis-1/5 mr-10 mt-10">
             <h3 className="text-xl font-semibold">Address</h3>
-            <p className="text-left">
+            <p className="text-center lg:text-left">
               Kelambakkam - Vandallur
               <br />
               Rd, Rajan Nagar, Chennai,
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="space-y-4 text-center justify-center basis-1/4">
+          <div className="space-y-4 flex flex-col text-center md:text-left justify-center items-center mt-10 mr-10">
             <h3 className="text-xl font-semibold">Social Media</h3>
             <SocialMediaGrid />
           </div>
