@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import Timer from "@/components/timer/Timer";
 import FAQAccordion from "@/components/accordion/FAQAccordion";
+import Sponsor from "@/components/ui/sponsor";
+import { sponsorsList } from "@/lib/sponsorsList";
 
 const poppins = Poppins({
   weight: "400",
@@ -22,14 +24,16 @@ export default function Home() {
         <Image
           src="/two.png"
           alt="2.0"
-          className="absolute top-[63%] left-[52%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
+          width={100}
+          height={100}
+          className="absolute top-[52%] left-[53%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
         />
         {/* Timer Section */}
         <Timer />
         <div className="w-full" id="about">
           <div className="w-full flex flex-col mb-24">
-            <p className="mt-24  font-extrabold text-5xl text-center md:text-start">
-              ABOUT US
+            <p className="mt-24 font-extrabold text-5xl text-center md:text-start">
+              About Us
             </p>
             <div className="w-full sm:w-2/3 lg:w-2/4 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
               <p className="text-white text-start p-8 sm:p-12 md:p-12 lg:p-12">
@@ -107,26 +111,20 @@ export default function Home() {
 
         {/* Sponsors Section */}
         <div className="w-full" id="sponsors">
-          <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
-          <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-24 text-center border-[#104456] border-2">
-            <div>
-              <p>Sponsor 1</p>
-            </div>
-            <div>
-              <p>Sponsor 2</p>
-            </div>
-            <div>
-              <p>Sponsor 3</p>
-            </div>
-            <div>
-              <p>Sponsor 4</p>
-            </div>
-            <div>
-              <p>Sponsor 5</p>
-            </div>
-            <div>
-              <p>Sponsor 6</p>
-            </div>
+          <p className="text-right font-extrabold text-5xl">Our Sponsors</p>
+          {/* <div className="grid grid-cols-3 grid-rows-2 gap-4 mt-24 text-center border-[#104456] border-2">
+            {sponsorsList.map((sponsor, index) => (
+              <Sponsor
+                key={sponsor.name}
+                name={sponsor.name}
+                image={sponsor.image}
+              />
+            ))}
+          </div> */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2">
+            {sponsorsList.map((sponsor, index) => (
+              <Sponsor key={index} name={sponsor.name} image={sponsor.image} />
+            ))}
           </div>
         </div>
 
