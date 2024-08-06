@@ -26,7 +26,7 @@ export default function Home() {
           className="absolute top-[52%] left-[53%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
         />
         {/* Timer Section */}
-        <Timer />
+        {/* <Timer /> */}
         <div className="w-full" id="about">
           <div className="w-full flex flex-col mb-24">
             <p className="mt-24 font-extrabold text-5xl text-center md:text-start">

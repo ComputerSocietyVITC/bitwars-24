@@ -27,16 +27,16 @@ const Footer = () => {
         {/* Footer content */}
         <div className="flex md:flex-row flex-col justify-center">
           {/* IEEE logo */}
-          <div className="flex items-center justify-center basis-1/3 mr-10">
+          <div className="flex items-center justify-center basis-1/3">
             <Image src="/logo2.png" alt="logo2" width={280} height={80} />
           </div>
 
           {/* Menu */}
-          <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/6 mr-10">
+          <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/6">
             <h3 className="text-xl font-semibold items-center md:text-left">
               Menu
             </h3>
-            <ul className="space-y-2 text-center md:text-left md:ml-3">
+            <ul className="space-y-2 text-center md:text-left">
               <TextButton href="#about">About</TextButton>
               <TextButton href="#team">Our Team</TextButton>
               <TextButton href="#events">Events</TextButton>
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
 
           {/* VITC address */}
-          <div className="space-y-4 flex items-center flex-col justify-center basis-1/5 mr-10 mt-10">
+          <div className="space-y-4 flex items-center flex-col justify-center basis-1/5 mt-10">
             <h3 className="text-xl font-semibold">Address</h3>
             <p className="text-center lg:text-left">
               Kelambakkam - Vandallur
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="space-y-4 flex flex-col text-center md:text-left justify-center items-center mt-10 mr-10">
+          <div className="space-y-4 flex flex-col text-center md:text-left justify-center items-center mt-10">
             <h3 className="text-xl font-semibold">Social Media</h3>
             <SocialMediaGrid />
           </div>
