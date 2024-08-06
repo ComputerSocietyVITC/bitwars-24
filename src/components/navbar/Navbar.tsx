@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import TextButton from "../buttons/TextButton";
 import IconButton from "../buttons/IconButton";
 import { Montserrat } from "next/font/google";
+import Sidebar from "../ui/sidebar";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -41,7 +42,8 @@ const Navbar = () => {
                   d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
                 />
               </svg>
-              {isDropdownOpen && (
+              <Sidebar />
+              {/* {isDropdownOpen && (
                 <ul className="absolute right-0 w-48 bg-white text-black rounded shadow-lg">
                   <li>
                     <TextButton href="#about">About Us</TextButton>
@@ -59,7 +61,7 @@ const Navbar = () => {
                     <TextButton href="#faq">FAQs</TextButton>
                   </li>
                 </ul>
-              )}
+              )} */}
             </button>
             <ul className="hidden md:flex gap-x-16 text-white ">
               <TextButton href="#about">About Us</TextButton>

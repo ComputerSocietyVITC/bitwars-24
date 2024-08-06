@@ -109,7 +109,7 @@ export default function Home() {
         {/* Sponsors Section */}
         <div className="w-full" id="sponsors">
           <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2 m-8">
             {sponsorsList.map((sponsor, index) => (
               <Sponsor key={index} name={sponsor.name} image={sponsor.image} />
             ))}
