@@ -5,10 +5,13 @@ import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpLong } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Footer = () => {
   return (
-    <>
+    <div className={montserrat.className}>
       <footer className="text-white p-8 w-full">
         {/* Scroll to top button and line */}
         <div className="flex justify-center items-center mb-4">
@@ -30,7 +33,9 @@ const Footer = () => {
 
           {/* Menu */}
           <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/6 mr-10">
-            <h3 className="text-xl font-semibold items-center md:text-left">Menu</h3>
+            <h3 className="text-xl font-semibold items-center md:text-left">
+              Menu
+            </h3>
             <ul className="space-y-2 text-center md:text-left md:ml-3">
               <TextButton href="#about">About</TextButton>
               <TextButton href="#team">Our Team</TextButton>
@@ -60,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
 

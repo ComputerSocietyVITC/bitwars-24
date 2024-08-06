@@ -1,12 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Poppins } from "next/font/google";
-import "../../app/globals.css"
-
-const poppins = Poppins({
-  weight: "400",
-  subsets: ["latin"],
-});
+import "../../app/globals.css";
 
 const Timer = () => {
   const [days, setDays] = useState(0);
