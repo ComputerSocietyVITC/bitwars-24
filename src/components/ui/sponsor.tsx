@@ -1,6 +1,11 @@
 import React from "react";
 
-const Sponsor = ({ name, image }) => {
+interface Props {
+  name: string;
+  image: string;
+}
+
+const Sponsor = ({ name, image }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center text-center p-4">
       <img

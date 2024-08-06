@@ -1,18 +1,15 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google";
 import Timer from "@/components/timer/Timer";
 import FAQAccordion from "@/components/accordion/FAQAccordion";
 import Sponsor from "@/components/ui/sponsor";
 import { sponsorsList } from "@/lib/sponsorsList";
+import { Montserrat } from "next/font/google";
 
-const poppins = Poppins({
-  weight: "400",
-  subsets: ["latin"],
-});
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className={poppins.className}>
+    <main className={montserrat.className}>
       <div className="container mx-auto px-4 text-white">
         <Image
           src="/bitwarsLogo.png"
@@ -111,7 +108,7 @@ export default function Home() {
 
         {/* Sponsors Section */}
         <div className="w-full" id="sponsors">
-          <p className="text-right font-extrabold text-5xl">Our Sponsors</p>
+          <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2">
             {sponsorsList.map((sponsor, index) => (
               <Sponsor key={index} name={sponsor.name} image={sponsor.image} />
