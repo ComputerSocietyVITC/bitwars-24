@@ -187,7 +187,7 @@ html {
     #002b82 90%,
     #2479f9 100%
   );
-  border-radius: 4px;
-  padding: 4px;
+  border-radius: 5px;
+  padding: 3px;
   box-sizing: border-box;
 }
