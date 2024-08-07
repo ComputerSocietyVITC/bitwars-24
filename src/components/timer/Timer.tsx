@@ -27,7 +27,7 @@ const Timer = () => {
 
   return (
     <div className="max-w-screen-lg h-full bg-gradient-to-r from-[#14357A] via-[#1088AC] to-[#1083A9] rounded-3xl skew-x-[-25deg] mx-auto mt-[-30px] partial-border-gradient w-full">
-      <div className="h-fit w-full timer-bg rounded-3xl text-white text-8xl inline-block text-center p-8">
+      <div className="h-fit w-full timer-bg rounded-xl text-white text-8xl inline-block text-center p-8">
         <div className="flex justify-around">
           <div className="w-1/4 float-left">
             <div className="skew-x-[25deg]">
