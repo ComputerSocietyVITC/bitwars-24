@@ -26,39 +26,39 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="max-w-screen-lg h-full bg-gradient-to-r from-[#14357A] via-[#1088AC] to-[#1083A9] rounded-3xl skew-x-[-25deg] mx-auto mt-[-30px] partial-border-gradient w-full">
-      <div className="h-fit w-full timer-bg rounded-xl text-white text-8xl inline-block text-center p-8">
-        <div className="flex justify-around">
-          <div className="w-1/4 float-left">
+    <div className="w-3/5 md:w-full max-w-screen-lg h-full bg-gradient-to-r from-[#14357A] via-[#1088AC] to-[#1083A9] rounded-3xl skew-x-[-25deg] mx-auto mt-[-30px] partial-border-gradient">
+      <div className="h-fit w-full timer-bg rounded-xl text-white text-4xl md:text-8xl inline-block text-center p-4 md:p-8">
+        <div className="flex flex-col md:flex-row justify-around">
+          <div className="w-full md:w-1/4 mb-4 md:mb-0">
             <div className="skew-x-[25deg]">
-              <p id="day" className="-mb-10 font-extrabold">
+              <p id="day" className="-mb-2 md:-mb-10 font-extrabold">
                 {days < 10 ? "0" + days : days}
               </p>
-              <span className="text-3xl font-thin">DAYS</span>
+              <span className="text-lg md:text-3xl font-thin">DAYS</span>
             </div>
           </div>
-          <div className="w-1/4 float-left">
+          <div className="w-full md:w-1/4 mb-4 md:mb-0">
             <div className="skew-x-[25deg]">
-              <p id="hour" className="-mb-10 font-extrabold">
+              <p id="hour" className="-mb-2 md:-mb-10 font-extrabold">
                 {hours < 10 ? "0" + hours : hours}
               </p>
-              <span className="text-3xl font-thin">HOURS</span>
+              <span className="text-lg md:text-3xl font-thin">HOURS</span>
             </div>
           </div>
-          <div className="w-1/4 float-left">
+          <div className="w-full md:w-1/4 mb-4 md:mb-0">
             <div className="skew-x-[25deg]">
-              <p id="minute" className="-mb-10 font-extrabold">
+              <p id="minute" className="-mb-2 md:-mb-10 font-extrabold">
                 {minutes < 10 ? "0" + minutes : minutes}
               </p>
-              <span className="text-3xl font-thin">MINUTES</span>
+              <span className="text-lg md:text-3xl font-thin">MINUTES</span>
             </div>
           </div>
-          <div className="w-1/4 float-left">
+          <div className="w-full md:w-1/4">
             <div className="skew-x-[25deg]">
-              <p id="second" className="-mb-10 font-extrabold">
+              <p id="second" className="-mb-2 md:-mb-10 font-extrabold">
                 {seconds < 10 ? "0" + seconds : seconds}
               </p>
-              <span className="text-3xl font-thin">SECONDS</span>
+              <span className="text-lg md:text-3xl font-thin">SECONDS</span>
             </div>
           </div>
         </div>
