@@ -11,15 +11,17 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <div className="container mx-auto px-4 text-white">
-        <Image
-          src="/bitwarsLogo.png"
-          alt="logo"
-          height={500}
-          width={500}
-          className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
-        />
-        {/* Timer Section */}
-        <Timer />
+        <div className="min-h-screen flex flex-col justify-center scale-125">
+          <Image
+            src="/bitwarsLogo.png"
+            alt="logo"
+            height={500}
+            width={500}
+            className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
+          />
+          {/* Timer Section */}
+          <Timer />
+        </div>
         <div className="w-full" id="about">
           <div className="w-full flex flex-col mb-24">
             <p className="mt-24 font-extrabold text-5xl text-center md:text-start">
@@ -40,7 +42,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* Events Section */}
         <div className="w-full mb-11" id="events">
           <p className="text-center font-extrabold text-5xl">
