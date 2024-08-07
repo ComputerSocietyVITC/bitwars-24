@@ -18,13 +18,6 @@ export default function Home() {
           width={500}
           className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
         />
-        <Image
-          src="/two.png"
-          alt="2.0"
-          width={100}
-          height={100}
-          className="absolute top-[52%] left-[53%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
-        />
         {/* Timer Section */}
         <Timer />
         <div className="w-full" id="about">

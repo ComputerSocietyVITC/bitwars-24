@@ -169,3 +169,25 @@ html {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(3, 28, 84, 0.993);
 }
+
+.partial-border-gradient {
+  background: linear-gradient(
+    147deg,
+    #2479f9 0%,
+    #002b82 12%,
+
+    transparent 12%,
+    transparent 35%,
+
+    #2479f9 35%,
+    #002b82 48%,
+    #2479f9 60%,
+    transparent 60%,
+    transparent 90%,
+    #002b82 90%,
+    #2479f9 100%
+  );
+  border-radius: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+}
