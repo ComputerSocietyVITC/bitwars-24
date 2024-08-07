@@ -25,16 +25,16 @@ const socialMediaLinks = [
 
 const SocialMediaGrid: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 gap-y-4 md:grid-cols-4">
+    <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-4">
       {socialMediaLinks.map((link, index) => (
         <a
           key={index}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center mx-4 justify-center bg-[#0B1E3E] rounded-lg w-12 h-12 hover:bg-blue-500 transition-all duration-300 "
+          className="flex items-center mx-2 justify-center bg-[#0B1E3E] rounded-lg w-12 h-12 hover:bg-blue-500 transition-all duration-300 "
         >
-          <FontAwesomeIcon icon={link.icon} size="lg" className=""/>
+          <FontAwesomeIcon icon={link.icon} size="lg" className="" />
         </a>
       ))}
     </div>

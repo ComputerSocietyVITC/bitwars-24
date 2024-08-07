@@ -11,22 +11,18 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <div className="container mx-auto px-4 text-white">
-        <Image
-          src="/bitwarsLogo.png"
-          alt="logo"
-          height={500}
-          width={500}
-          className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
-        />
-        <Image
-          src="/two.png"
-          alt="2.0"
-          width={100}
-          height={100}
-          className="absolute top-[52%] left-[53%] w-[71px] translate-x-1/2 translate-y-1/2 z-50"
-        />
-        {/* Timer Section */}
-        <Timer />
+        <div className="min-h-screen flex flex-col justify-center scale-[110%] -mt-12">
+          <Image
+            src="/bitwarsLogo.png"
+            alt="logo"
+            height={500}
+            width={500}
+            className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
+          />
+          {/* Timer Section */}
+          <Timer />
+        </div>
+
         <div className="w-full" id="about">
           <div className="w-full flex flex-col mb-24">
             <p className="mt-24 font-extrabold text-5xl text-center md:text-start">
@@ -47,7 +43,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
         {/* Events Section */}
         <div className="w-full mb-11" id="events">
           <p className="text-center font-extrabold text-5xl">
@@ -109,7 +104,7 @@ export default function Home() {
         {/* Sponsors Section */}
         <div className="w-full" id="sponsors">
           <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2 m-8">
             {sponsorsList.map((sponsor, index) => (
               <Sponsor key={index} name={sponsor.name} image={sponsor.image} />
             ))}
