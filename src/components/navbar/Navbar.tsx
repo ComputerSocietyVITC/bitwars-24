@@ -8,7 +8,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const Navbar = () => {
   return (
     <div className={montserrat.className}>
-      <div className="w-full h-20 top-0 absolute">
+      <div className="w-full h-20 top-0 absolute z-50">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-20">
             <IconButton

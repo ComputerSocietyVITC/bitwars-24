@@ -9,6 +9,18 @@ html {
     #0c0b12 15.89%,
     #0c0b12 35.55%
   );
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 @layer base {
