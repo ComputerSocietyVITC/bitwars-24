@@ -34,7 +34,10 @@ const Footer = () => {
           {/* Menu */}
           <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/6">
             <h3 className="text-xl font-semibold items-center md:text-left">
-              Menu
+              <div className="relative">
+                Menu
+                <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
+              </div>
             </h3>
             <ul className="space-y-2 text-center md:text-left">
               <TextButton href="#about">About</TextButton>
@@ -47,7 +50,12 @@ const Footer = () => {
 
           {/* VITC address */}
           <div className="space-y-4 flex items-center flex-col justify-center basis-1/5 mt-10">
-            <h3 className="text-xl font-semibold">Address</h3>
+            <h3 className="text-xl font-semibold">
+              <div className="relative">
+                Address
+                <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
+              </div>
+            </h3>
             <p className="text-center lg:text-left">
               Kelambakkam - Vandallur
               <br />
@@ -60,7 +68,12 @@ const Footer = () => {
 
           {/* Social Media */}
           <div className="space-y-4 flex flex-col text-center md:text-left justify-center items-center mt-10">
-            <h3 className="text-xl font-semibold">Social Media</h3>
+            <h3 className="text-xl font-semibold">
+              <div className="relative">
+                Social Media
+                <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
+              </div>
+            </h3>
             <SocialMediaGrid />
           </div>
         </div>
