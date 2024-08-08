@@ -15,8 +15,9 @@ const Navbar = () => {
   };
 
   return (
-
-    <div className={`${montserrat.className} fixed w-full top-0 p-4 z-50`}>
+    <div
+      className={`${montserrat.className} fixed w-full top-0 p-4 z-50 transition-all`}
+    >
       <div className="w-full h-20">
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-20">
