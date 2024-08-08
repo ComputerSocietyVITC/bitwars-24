@@ -1,79 +1,100 @@
 "use client";
 import React, { useState } from "react";
-import TextButton from "../buttons/TextButton";
-import IconButton from "../buttons/IconButton";
+import { navLinks, Route } from "../data/navLinks";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import NavButton from "../buttons/NavButton";
 import { Montserrat } from "next/font/google";
-import Sidebar from "../ui/sidebar";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Navbar = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleDropdownToggle = () => {
-    setIsDropdownOpen(!isDropdownOpen);
+  const handleClick = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div className={`${montserrat.className} w-full top-0 p-4 z-50`}>
-      <div className="w-full h-20">
-        <div className="container mx-auto px-4 h-full">
-          <div className="flex justify-between items-center h-20">
-            <IconButton
-              href="/"
-              src="/logo.png"
-              alt="Logo"
-              width={48}
-              height={48}
-            />
-            <button
-              type="button"
-              className="inline-flex items-center md:hidden"
-              onClick={handleDropdownToggle}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#fff"
-                  d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
-                />
-              </svg>
-              <Sidebar />
-              {/* {isDropdownOpen && (
-                <ul className="absolute right-0 w-48 bg-white text-black rounded shadow-lg">
-                  <li>
-                    <TextButton href="#about">About Us</TextButton>
-                  </li>
-                  <li>
-                    <TextButton href="#team">Our Team</TextButton>
-                  </li>
-                  <li>
-                    <TextButton href="#events">Events</TextButton>
-                  </li>
-                  <li>
-                    <TextButton href="#sponsors">Sponsors</TextButton>
-                  </li>
-                  <li>
-                    <TextButton href="#faq">FAQs</TextButton>
-                  </li>
-                </ul>
-              )} */}
-            </button>
-            <ul className="hidden md:flex gap-x-16 text-white ">
-              <TextButton href="#about">About Us</TextButton>
-              <TextButton href="#team">Our Team</TextButton>
-              <TextButton href="#events">Events</TextButton>
-              <TextButton href="#sponsors">Sponsors</TextButton>
-              <TextButton href="#faq">FAQs</TextButton>
-            </ul>
-            <div className="hidden md:block"></div>
-          </div>
-        </div>
-      </div>
+    <div
+      className={`${montserrat.className} px-6 py-4 lg:px-8 lg:py-6 flex justify-between items-center relative z-50`}
+    >
+      {isOpen && (
+        <section
+          onClick={handleClick}
+          className="fixed top-0 left-0 flex flex-col items-center justify-center h-screen w-screen z-50 backdrop-blur-2xl"
+        >
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: 1,
+            }}
+            transition={{
+              duration: 0.3,
+              delay: 0,
+              ease: "easeInOut",
+            }}
+            exit={{ opacity: 0 }}
+            className="backdrop-blur-2xl shadow-slate-300 border border-white/[0.4] shadow-2xl flex flex-col items-center justify-center rounded-2xl py-4 px-8"
+          >
+            {navLinks.map((route: Route, index: number) => (
+              <a key={index} href={route.href}>
+                <section
+                  onClick={handleClick}
+                  className={`px-16 py-6 text-white hover:bg-black hover:bg-opacity-5 rounded-xl`}
+                  id={route.title}
+                >
+                  {route.title}
+                </section>
+              </a>
+            ))}
+          </motion.section>
+        </section>
+      )}
+
+      <a href="/">
+        <Image src="/logo.png" alt="IEEE Logo" width={48} height={48} />
+      </a>
+
+      <nav className="lg:hidden">
+        <button
+          onClick={handleClick}
+          className="flex flex-col justify-center items-center py-1"
+        >
+          <span
+            className={`bg-slate-400 block transition-all duration-300 ease-out
+                            h-0.5 w-6 rounded-sm ${
+                              isOpen
+                                ? "rotate-45 translate-y-1"
+                                : "-translate-y-0.5"
+                            }`}
+          ></span>
+          <span
+            className={`bg-slate-400 block transition-all duration-300 ease-out
+                            h-0.5 w-6 rounded-sm my-0.5 ${
+                              isOpen ? "opacity-0" : "opacity-100"
+                            }`}
+          ></span>
+          <span
+            className={`bg-slate-400 block transition-all duration-300 ease-out
+                            h-0.5 w-6 rounded-sm ${
+                              isOpen
+                                ? "-rotate-45 -translate-y-1"
+                                : "translate-y-0.5"
+                            }`}
+          ></span>
+        </button>
+      </nav>
+
+      <nav className="hidden lg:block">
+        {navLinks.map((route: Route, index: number) => (
+          <NavButton key={index} href={route.href}>
+            {route.title}
+          </NavButton>
+        ))}
+      </nav>
+
+      <div className="hidden lg:block"></div>
     </div>
   );
 };
