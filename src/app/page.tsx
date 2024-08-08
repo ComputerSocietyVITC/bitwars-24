@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <div className="container mx-auto px-4 text-white">
-        <div className="min-h-screen flex flex-col justify-center scale-[110%] -mt-20">
+        <div className="min-h-screen flex flex-col justify-center scale-[110%] lg:-mt-20">
           <Image
             src="/bitwarsLogo.png"
             alt="logo"

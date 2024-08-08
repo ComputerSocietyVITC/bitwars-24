@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`${montserrat.className} px-6 py-4 lg:px-8 lg:py-6 flex justify-between items-center relative z-50`}
+      className={`${montserrat.className} px-6 py-4 lg:px-8 lg:py-6 flex justify-between items-center lg:relative z-50 fixed top-0 left-0 w-full`}
     >
       {isOpen && (
         <section
