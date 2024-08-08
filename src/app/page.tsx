@@ -1,84 +1,49 @@
 import Image from "next/image";
-import Timer from "@/components/timer/Timer";
 import FAQAccordion from "@/components/accordion/FAQAccordion";
 import Sponsor from "@/components/ui/sponsor";
 import { sponsorsList } from "@/lib/sponsorsList";
 import { Montserrat } from "next/font/google";
+import Main from "@/pages/main";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main className={montserrat.className}>
-      <div className="container mx-auto px-4 text-white">
-        <div className="min-h-screen flex flex-col justify-center scale-[110%] lg:-mt-20">
-          <Image
-            src="/bitwarsLogo.png"
-            alt="logo"
-            height={500}
-            width={500}
-            className="z-30 justify-center align-center mx-auto relative"
-          />
-          {/* Timer Section */}
-          <Timer />
-        </div>
-
-        <div className="w-full" id="about">
-          <div className="w-full flex flex-col mb-24">
-            <p className="mt-24 font-extrabold text-5xl text-center md:text-start">
-              About Us
-            </p>
-            <div className="w-full sm:w-2/3 lg:w-2/4 sm:ml-24 md:ml-36 lg:ml-48 mt-14 rounded-2xl about-content text-center">
-              <p className="text-white text-start p-8 sm:p-12 md:p-12 lg:p-12">
-                VIT Chennai, established in 2010, is a leading private
-                institution in Tamil Nadu, India, offering top-tier engineering
-                programs with a focus on research, industry collaboration, and
-                practical learning for successful technical careers. IEEE CS
-                VITC, established in 2019 at VIT Chennai, where innovation
-                thrives and technology excels. As a premier branch of IEEE and
-                its Computer Society, we are committed to driving breakthroughs
-                in computer science and connecting visionary tech enthusiasts
-                globally.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div className="w-4/5 mx-auto px-4 text-white">
+        <Main />
         {/* Events Section */}
         <div className="w-full mb-11" id="events">
           <p className="text-center font-extrabold text-5xl">
             Our Event Showcase
           </p>
 
-          <div className="flex flex-col md:flex-row lg:w-full">
-            <section className=" flex items-left pt-12 pl-12 pr-24 my-12 mr-24">
-              <section className="flex flex-col mx-auto">
-                <section className="flex">
-                  <Image
-                    src="/logo.png"
-                    alt="image1"
-                    width={150}
-                    height={150}
-                    className="rounded-3xl"
-                  />
+          <section className="flex justify-around items-center ">
+            <section className="flex">
+              <Image
+                src="/logo.png"
+                alt="image1"
+                width={150}
+                height={150}
+                className="w-[150px] h-[150px] rounded-3xl relative -translate-y-12 z-10"
+              />
 
-                  <Image
-                    alt="image2"
-                    src="/logo.png"
-                    height={150}
-                    width={150}
-                    className="rounded-3xl -translate-x-8 translate-y-12"
-                  />
-                </section>
-                <Image
-                  alt="image3"
-                  src="/logo.png"
-                  height={150}
-                  width={150}
-                  className="rounded-3xl z-10 translate-x-12 -translate-y-8"
-                />
-              </section>
+              <Image
+                alt="image2"
+                src="/logo.png"
+                height={150}
+                width={150}
+                className="w-[150px] h-[150px] rounded-3xl relative -translate-x-24 translate-y-12 z-10"
+              />
+              <Image
+                alt="image3"
+                src="/logo.png"
+                height={150}
+                width={150}
+                className="w-[150px] h-[150px] rounded-3xl z-10 absolute translate-x-28 -translate-y-12"
+              />
             </section>
-            <div className="flex flex-col w-full sm:w-2/3 md:mr-10 sm:ml-24 md:ml-0 lg:w-2/4 h-4/5 sm:mt-12 md:mt-12 rounded-2xl event-content p-8 sm:p-12 md:p-12 lg:p-12 overflow-auto">
+            <div className="bg-gradient-to-br from-[#100e1773] via-[#10345676] to-[#100e177e] border-white/[0.2] border flex flex-col md:mr-10 sm:ml-24 md:ml-0 sm:mt-12 md:mt-12 rounded-2xl w-[45vw] sm:p-12 md:p-12">
               <p className="text-white text-start">
                 BITWARS 2.0, VIT Chennai&apos;s second edition of the biggest
                 offline Competitive Programming Event, is set to revolutionize
@@ -98,7 +63,7 @@ export default function Home() {
                 3. Competitive coding battleground with over 419 participants
               </p>
             </div>
-          </div>
+          </section>
         </div>
 
         {/* Sponsors Section */}
