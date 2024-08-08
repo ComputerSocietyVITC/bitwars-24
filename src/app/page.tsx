@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <div className="container mx-auto px-4 text-white">
-        <div className="min-h-screen flex flex-col justify-center scale-[110%] -mt-12">
+        <div className="min-h-screen flex flex-col justify-center scale-[110%] -mt-20">
           <Image
             src="/bitwarsLogo.png"
             alt="logo"
             height={500}
             width={500}
-            className="z-30 items-center justify-center align-center mx-auto mt-24 relative"
+            className="z-30 justify-center align-center mx-auto relative"
           />
           {/* Timer Section */}
           <Timer />
