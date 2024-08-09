@@ -12,6 +12,29 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={montserrat.className}>
+      <section className="flex justify-around absolute w-full">
+        <Image
+          src="/vit.svg"
+          alt=""
+          width={150}
+          height={150}
+          className="object-contain sm:w-24"
+        />
+        <Image
+          src="/compsoc.png"
+          width={150}
+          height={150}
+          alt=""
+          className=" object-contain sm:w-24 sm:pl-5"
+        />
+        <Image
+          src="/swc.png"
+          width={150}
+          height={150}
+          alt=""
+          className="object-contain sm:w-24"
+        />
+      </section>
       <div className="w-4/5 mx-auto px-4 text-white">
         <Main />
         <Aboutus />

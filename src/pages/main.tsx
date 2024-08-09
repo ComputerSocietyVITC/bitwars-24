@@ -5,12 +5,8 @@ import Timer from "@/components/timer/Timer";
 const Main: React.FC = () => {
   return (
     <>
-      <section className="flex justify-around">
-        <Image src="/vit.svg" alt="" width={150} height={150} className="object-contain sm:w-24" />
-        <Image src="/compsoc.png" width={150} height={150} alt="" className=" object-contain sm:w-24 sm:pl-5"/>
-        <Image src="/swc.png"width={150} height={150}  alt="" className="object-contain sm:w-24"/>
-      </section>
-      <div className="min-h-screen flex flex-col scale-[110%] mt-12">
+      
+      <div className="min-h-screen flex flex-col scale-[110%] justify-center">
         <Image
           src="/bitwarsLogo.png"
           alt="logo"
