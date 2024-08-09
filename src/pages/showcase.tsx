@@ -4,7 +4,7 @@ import Image from "next/image";
 const Showcase = () => {
   return (
     <>
-      <div className="w-full" id="about">
+      <div className="w-full" id="events">
         <div className="w-full flex flex-col">
           <p className="mt-24 font-extrabold text-5xl text-center">
             Event Showcase
@@ -35,14 +35,16 @@ const Showcase = () => {
                 problems. Join us for a transformative experience.
               </p>
               <section className="text-white text-start border border-slate-500 rounded-2xl p-4 md:text-sm">
-                <section className="font-semibold italic md:text-lg">Overview</section>
+                <section className="font-semibold italic md:text-lg">
+                  Overview
+                </section>
                 <section className="">
-                  - Competitive coding event where participants competed for
-                  the top title Challenged participants&apos; coding skills and
+                  - Competitive coding event where participants competed for the
+                  top title Challenged participants&apos; coding skills and
                   strategic thinking <br />
                   - Featured an &quot;Algorithm Showdown&quot; by Mr. Manas
-                  Tiwari, SWE @Microsoft <br />
-                  - Competitive coding battleground with over 419 participants
+                  Tiwari, SWE @Microsoft <br />- Competitive coding battleground
+                  with over 419 participants
                 </section>
               </section>
             </div>
