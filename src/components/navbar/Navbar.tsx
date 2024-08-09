@@ -20,7 +20,7 @@ const Navbar = () => {
       <div
         className={`${
           montserrat.className
-        } px-6 py-4 lg:px-8 lg:py-6 flex justify-between items-center lg:relative z-50 top-0 left-0 w-full ${
+        } px-6 py-4 lg:px-8 lg:py-6 flex justify-between items-center mx-auto z-50 top-0 left-0 w-4/5  ${
           isOpen ? "hidden" : ""
         }`}
       >
@@ -31,7 +31,7 @@ const Navbar = () => {
         <nav className="lg:hidden">
           <button
             onClick={handleClick}
-            className="flex flex-col justify-center items-center py-1"
+            className="flex flex-col items-center py-1"
           >
             <span
               className={`bg-slate-400 block transition-all duration-300 ease-out
@@ -65,8 +65,6 @@ const Navbar = () => {
             </NavButton>
           ))}
         </nav>
-
-        <div className="hidden lg:block"></div>
       </div>
       {isOpen && (
         <section className="absolute z-50 h-screen w-screen">

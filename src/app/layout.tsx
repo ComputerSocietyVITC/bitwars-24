@@ -16,9 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden bg-black">
       <body className="bg-[url('/bg.svg')] bg-cover">
-        <Navbar />
+        {/*<Navbar />*/}
         {children}
-        <Footer />
+        {/*<Footer />*/}
       </body>
     </html>
   );
