@@ -26,11 +26,11 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="w-4/5 md:w-4/5 sm:w-full max-w-screen-lg h-full rounded-3xl skew-x-[-25deg] md:skew-x-[-25deg] sm:skew-x-[-5deg] mx-auto partial-border-gradient">
+    <div className="md:scale-[70%] w-4/5 md:w-4/5 sm:w-full max-w-screen-lg h-full rounded-3xl skew-x-[-25deg] md:skew-x-[-10deg] sm:skew-x-[-5deg] mx-auto partial-border-gradient">
       <div className="h-fit w-full bg-gradient-to-br from-[#100e17] via-[#0b1b3a] to-[#0d0b13] border-white/[0.2] rounded-xl text-white text-8xl text-center p-4 md:p-8">
         <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-2 items-center place-content-center">
           <div className="w-full mt-4">
-            <div className="skew-x-[25deg] sm:skew-x-[5deg] w-full">
+            <div className="skew-x-[25deg] sm:skew-x-[5deg] md:skew-x-[10deg] w-full">
               <p id="day" className=" font-extrabold sm:text-6xl">
                 {days < 10 ? "0" + days : days}
               </p>
@@ -40,7 +40,7 @@ const Timer = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="skew-x-[25deg] sm:skew-x-[5deg]">
+            <div className="skew-x-[25deg] sm:skew-x-[5deg] md:skew-x-[10deg]">
               <p id="hour" className=" font-extrabold sm:text-6xl">
                 {hours < 10 ? "0" + hours : hours}
               </p>
@@ -50,7 +50,7 @@ const Timer = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="skew-x-[25deg] sm:skew-x-[5deg]">
+            <div className="skew-x-[25deg] sm:skew-x-[5deg] md:skew-x-[10deg]">
               <p id="minute" className="font-extrabold sm:text-6xl">
                 {minutes < 10 ? "0" + minutes : minutes}
               </p>
@@ -60,7 +60,7 @@ const Timer = () => {
             </div>
           </div>
           <div className="w-full">
-            <div className="skew-x-[25deg] sm:skew-x-[5deg]">
+            <div className="skew-x-[25deg] sm:skew-x-[5deg] md:skew-x-[10deg]">
               <p id="second" className="font-extrabold sm:text-6xl">
                 {seconds < 10 ? "0" + seconds : seconds}
               </p>
