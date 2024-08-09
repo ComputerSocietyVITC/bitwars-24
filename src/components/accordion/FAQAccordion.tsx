@@ -26,7 +26,7 @@ const FAQAccordion = () => {
               Bitwars 2.0 is a premier offline competitive coding event where
               participants demonstrate their expertise through a series of
               rigorous coding challenges. These challenges are meticulously
-              designed to assess and enhance the participants' skills and
+              designed to assess and enhance the participants&apos; skills and
               capabilities in the field of computing.
             </AccordionContent>
           </AccordionItem>
@@ -66,7 +66,7 @@ const FAQAccordion = () => {
               Where will Bitwars 2.0 be hosted?
             </AccordionTrigger>
             <AccordionContent className="text-white text-left accord-cont p-4 leading-relaxed">
-              VIT Chennai, Mahatma Gandhi Auditorium
+              MG Auditorium, VIT Chennai.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-6">
@@ -97,8 +97,8 @@ const FAQAccordion = () => {
             </AccordionTrigger>
             <div className="w-[100%] accord-lines h-0.5"></div>
             <AccordionContent className="text-white text-left accord-cont p-4 leading-relaxed">
-              Featuring an "Algorithm Showdown" presented by Mr. Manas Tiwari,
-              Software Engineer at Microsoft.
+              Featuring an &quot;Algorithm Showdown&quot; presented by Mr. Manas
+              Tiwari, Software Engineer at Microsoft.
             </AccordionContent>
           </AccordionItem>
         </div>
