@@ -12,21 +12,20 @@ const config = {
   theme: {
     container: {
       center: true,
-      screens: {
-        sm: {
-          min: "300px",
-          max: "640px",
-        },
-        md: {
-          min: "640px",
-          max: "1280px",
-        },
-        lg: {
-          min: "1280px",
-        },
-      },
     },
     extend: {
+      screens: {
+        sm: {
+          max: "767px",
+        },
+        md: {
+          min: "768px",
+          max: "1219px",
+        },
+        lg: {
+          min: "1220px",
+        },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
