@@ -37,12 +37,12 @@ export default function Home() {
       </section>
       <div className="w-4/5 mx-auto px-4 text-white">
         <Main />
-        <Aboutus />
+        {/*<Aboutus />
         {/* Events Section */}
-        <Showcase />
+        {/*<Showcase />*/}
 
         {/* Sponsors Section */}
-        <div className="w-full" id="sponsors">
+        {/*<div className="w-full" id="sponsors">
           <p className="text-center font-extrabold text-5xl">Our Sponsors</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-24 text-center border-[#104456] border-2 m-8">
             {sponsorsList.map((sponsor, index) => (
@@ -53,17 +53,17 @@ export default function Home() {
               />
             ))}
           </div>
-        </div>
+        </div>*/}
 
         {/* FAQ Section */}
-        <div className="w-full py-24" id="faq">
+        {/*<div className="w-full py-24" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
             Frequently Asked Questions
           </p>
           <div className="items-center justify-center">
             <FAQAccordion />
           </div>
-        </div>
+        </div>*/}
       </div>
     </main>
   );
