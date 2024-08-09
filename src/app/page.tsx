@@ -35,9 +35,9 @@ export default function Home() {
           className="object-contain sm:w-24"
         />
       </section>
-      <div className="w-4/5 mx-auto px-4 text-white">
+      <div className="w-4/5 md:w-full sm:w-full mx-auto px-4 text-white">
         <Main />
-        {/*<Aboutus />
+        <Aboutus />
         {/* Events Section */}
         {/*<Showcase />*/}
 
