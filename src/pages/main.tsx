@@ -5,7 +5,12 @@ import Timer from "@/components/timer/Timer";
 const Main: React.FC = () => {
   return (
     <>
-      <div className="min-h-screen flex flex-col justify-center scale-[110%] lg:-mt-20">
+      <section className="flex justify-around">
+        <Image src="/vit.svg" alt="" width={150} height={150} className="object-contain sm:w-24" />
+        <Image src="/compsoc.png" width={150} height={150} alt="" className=" object-contain sm:w-24 sm:pl-5"/>
+        <Image src="/swc.png"width={150} height={150}  alt="" className="object-contain sm:w-24"/>
+      </section>
+      <div className="min-h-screen flex flex-col scale-[110%] mt-12">
         <Image
           src="/bitwarsLogo.png"
           alt="logo"
@@ -15,26 +20,6 @@ const Main: React.FC = () => {
         />
         {/* Timer Section */}
         <Timer />
-      </div>
-
-      <div className="w-full" id="about">
-        <div className="w-full flex flex-col mb-24">
-          <p className="mt-24 font-extrabold text-5xl text-center md:text-start">
-            About Us
-          </p>
-          <div className="w-full sm:w-2/3 lg:w-2/4 lg:ml-48 mt-14 rounded-2xl text-center bg-gradient-to-br from-[#100e1773] via-[#10345676] to-[#100e177e] border border-white/[0.2]">
-            <p className="text-white text-start p-8 sm:p-12 md:p-12 lg:p-12">
-              VIT Chennai, established in 2010, is a leading private institution
-              in Tamil Nadu, India, offering top-tier engineering programs with
-              a focus on research, industry collaboration, and practical
-              learning for successful technical careers. IEEE CS VITC,
-              established in 2019 at VIT Chennai, where innovation thrives and
-              technology excels. As a premier branch of IEEE and its Computer
-              Society, we are committed to driving breakthroughs in computer
-              science and connecting visionary tech enthusiasts globally.
-            </p>
-          </div>
-        </div>
       </div>
     </>
   );

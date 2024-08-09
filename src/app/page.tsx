@@ -5,6 +5,7 @@ import { sponsorsList } from "@/lib/sponsorsList";
 import { Montserrat } from "next/font/google";
 import Main from "@/pages/main";
 import Showcase from "@/pages/showcase";
+import Aboutus from "@/pages/aboutus";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function Home() {
     <main className={montserrat.className}>
       <div className="w-4/5 mx-auto px-4 text-white">
         <Main />
+        <Aboutus />
         {/* Events Section */}
         <Showcase />
 
