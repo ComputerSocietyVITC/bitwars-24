@@ -38,8 +38,7 @@ export default function Home() {
       <div className="w-4/5 md:w-full sm:w-full mx-auto px-4 text-white">
         <Main />
         <Aboutus />
-        {/* Events Section */}
-        {/*<Showcase />*/}
+        <Showcase />
 
         {/* Sponsors Section */}
         {/*<div className="w-full" id="sponsors">
