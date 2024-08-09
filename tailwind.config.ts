@@ -12,17 +12,17 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
       screens: {
         sm: {
-          max: "767px",
+          min: "300px",
+          max: "640px",
         },
         md: {
-          min: "768px",
-          max: "1219px",
+          min: "640px",
+          max: "1280px",
         },
         lg: {
-          min: "1220px",
+          min: "1280px",
         },
       },
     },
