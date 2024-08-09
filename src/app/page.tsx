@@ -18,26 +18,26 @@ export default function Home() {
           alt=""
           width={150}
           height={150}
-          className="object-contain sm:w-24"
+          className="object-contain sm:w-28"
         />
         <Image
           src="/compsoc.png"
           width={150}
           height={150}
           alt=""
-          className=" object-contain sm:w-24 sm:pl-5"
+          className=" object-contain sm:w-28 sm:pl-5"
         />
         <Image
           src="/swc.png"
           width={150}
           height={150}
           alt=""
-          className="object-contain sm:w-24"
+          className="object-contain sm:w-28"
         />
       </section>
-      <div className="w-4/5 mx-auto px-4 text-white">
+      <div className="w-4/5 md:w-full sm:w-full mx-auto px-4 text-white">
         <Main />
-        {/*<Aboutus />
+        <Aboutus />
         {/* Events Section */}
         {/*<Showcase />*/}
 

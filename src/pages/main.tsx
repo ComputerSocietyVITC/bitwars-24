@@ -6,7 +6,7 @@ const Main: React.FC = () => {
   return (
     <>
       
-      <div className="min-h-screen flex flex-col scale-[110%] justify-center">
+      <div className="min-h-screen flex flex-col scale-[100%] justify-center">
         <Image
           src="/bitwarsLogo.png"
           alt="logo"
