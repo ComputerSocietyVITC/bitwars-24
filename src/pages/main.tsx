@@ -11,7 +11,7 @@ const Main: React.FC = () => {
           alt="logo"
           height={500}
           width={500}
-          className="z-30 justify-center align-center mx-auto relative"
+          className="z-30 justify-center align-center mx-auto relative top-10"
         />
         {/* Timer Section */}
         <Timer />
