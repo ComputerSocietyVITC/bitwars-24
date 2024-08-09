@@ -25,7 +25,7 @@ const Showcase = () => {
                 src="/bitwars.jpg"
                 className="w-full px-8 rounded-3xl object-contain hidden sm:block pt-8"
               />
-              <p className="text-white text-start md:text-sm my-8">
+              <p className="text-white text-justify md:text-sm my-8 ">
                 BITWARS 2.0, VIT Chennai&apos;s second edition of the biggest
                 offline Competitive Programming Event, is set to revolutionize
                 Competitive Programming Culture. Hosted by IEEE CS, it features

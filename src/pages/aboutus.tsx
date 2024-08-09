@@ -14,7 +14,7 @@ const Aboutus = () => {
               src="/oc.jpg"
               className="w-full px-8 rounded-3xl object-contain hidden sm:block pt-8"
             />
-            <p className="text-white text-start p-8 md:text-sm">
+            <p className="text-white text-justify py-12 px-8 md:text-sm">
               VIT Chennai, established in 2010, is a leading private institution
               in Tamil Nadu, India, offering top-tier engineering programs with
               a focus on research, industry collaboration, and practical

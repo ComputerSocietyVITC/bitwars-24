@@ -55,7 +55,7 @@ export default function Home() {
         </div>*/}
 
         {/* FAQ Section */}
-        <div className="w-full py-24" id="faq">
+        <div className="w-full py-24 min-h-screen" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
             Frequently Asked Questions
           </p>
