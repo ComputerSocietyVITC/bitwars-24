@@ -12,7 +12,8 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+    },
+    extend: {
       screens: {
         sm: {
           max: "767px",
@@ -25,8 +26,6 @@ const config = {
           min: "1220px",
         },
       },
-    },
-    extend: {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -14,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth overflow-x-hidden">
-      <body className="bg-[#0c0b12]">
+    <html lang="en" className="scroll-smooth overflow-x-hidden bg-black">
+      <body className="bg-[url('/bg.svg')] bg-cover">
         <Navbar />
         {children}
         <Footer />
