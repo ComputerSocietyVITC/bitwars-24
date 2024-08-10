@@ -4,8 +4,8 @@ import Timer from "@/components/timer/Timer";
 
 const Main: React.FC = () => {
   return (
-    <section className="min-h-screen flex flex-col">
-      <section className="w-full flex -mb-6 justify-around">
+    <section className="h-screen border">
+      <section className="w-full flex -mb-[6vh] justify-around">
         <Image
           src="/vit.svg"
           alt=""
@@ -25,18 +25,23 @@ const Main: React.FC = () => {
           width={150}
           height={100}
           alt=""
-          className="object-contain w-[20vh] sm:w-28"
+          className="object-contain w-[25vh] sm:w-28"
         />
       </section>
-      <div className="w-4/5 flex flex-col scale-[95%] self-center mt-12" id="home">
-        <Image
-          src="/bitwarsLogo.png"
-          alt="logo"
-          height={500}
-          width={500}
-          className="z-30 justify-center align-center mx-auto relative top-10 w-[45vh] md:scale-[80%] md:top-24"
-        />
-        <Timer />
+      <div className="h-[60%] flex items-center">
+        <div
+          className=" self-center mx-auto  w-4/5 flex flex-col scale-[95%] mt-12"
+          id="home"
+        >
+          <Image
+            src="/bitwarsLogo.png"
+            alt="logo"
+            height={500}
+            width={500}
+            className="z-30 justify-center align-center mx-auto relative top-10 w-[45vh] md:scale-[80%] md:top-24"
+          />
+          <Timer />
+        </div>
       </div>
     </section>
   );
