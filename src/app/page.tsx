@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FAQAccordion from "@/components/accordion/FAQAccordion";
 import { Montserrat } from "next/font/google";
 import Main from "@/pages/main";
@@ -10,31 +9,8 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={montserrat.className}>
-      <section className="flex justify-around absolute w-full">
-        <Image
-          src="/vit.svg"
-          alt=""
-          width={150}
-          height={150}
-          className="object-contain sm:w-28"
-        />
-        <Image
-          src="/compsoc.png"
-          width={150}
-          height={150}
-          alt=""
-          className=" object-contain sm:w-28 sm:pl-5"
-        />
-        <Image
-          src="/swc.png"
-          width={150}
-          height={150}
-          alt=""
-          className="object-contain sm:w-28"
-        />
-      </section>
+      <Main />
       <div className="w-4/5 md:w-full sm:w-full mx-auto px-4 text-white">
-        <Main />
         <Aboutus />
         <Showcase />
 
@@ -53,7 +29,10 @@ export default function Home() {
         </div>*/}
 
         <section>
-          <section id="sponsors" className="min-h-screen items-center flex justify-center pt-48">
+          <section
+            id="sponsors"
+            className="min-h-screen items-center flex justify-center pt-48"
+          >
             <a
               href="/BitwarsBrochure.pdf"
               target="_blank"
