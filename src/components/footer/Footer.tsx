@@ -25,10 +25,10 @@ const Footer = () => {
         </div>
 
         {/* Footer content */}
-        <div className="flex md:flex-row flex-col justify-center">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-center">
           {/* IEEE logo */}
           <div className="flex items-center justify-center basis-1/3">
-            <Image src="/logo2.png" alt="logo2" width={280} height={80} />
+            <Image src="/compsoc.png" alt="logo2" width={280} height={80} />
           </div>
 
           {/* Menu */}
@@ -41,8 +41,8 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-center md:text-left">
               <TextButton href="#about">About</TextButton>
-              <TextButton href="#team">Our Team</TextButton>
-              <TextButton href="#events">Events</TextButton>
+              <TextButton href="https://ieeecsvitc.com/">Team</TextButton>
+              <TextButton href="#events">Event</TextButton>
               <TextButton href="#sponsors">Sponsors</TextButton>
               <TextButton href="#faq">FAQs</TextButton>
             </ul>
@@ -56,13 +56,12 @@ const Footer = () => {
                 <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
               </div>
             </h3>
-            <p className="text-center lg:text-left">
-              Kelambakkam - Vandallur
+            <p className="text-center">
+              Kelambakkam - Vandalur Rd
               <br />
-              Rd, Rajan Nagar, Chennai,
+              Rajan Nagar, Chennai
               <br />
               Tamil Nadu 600127
-              <br />
             </p>
           </div>
 
