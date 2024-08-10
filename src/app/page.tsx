@@ -6,12 +6,37 @@ import { Montserrat } from "next/font/google";
 import Main from "@/pages/main";
 import Showcase from "@/pages/showcase";
 import Aboutus from "@/pages/aboutus";
+import { FloatingNav } from "@/components/navbar/floating-navbar";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
+  const navItems = [
+    {
+      name: "About",
+      link: "#about",
+    },
+    {
+      name: "Our Team",
+      link: "#team",
+    },
+    {
+      name: "Events",
+      link: "#events",
+    },
+    {
+      name: "Sponsors",
+      link: "#sponsors",
+    },
+    {
+      name: "FAQ",
+      link: "#faq",
+    },
+  ];
+
   return (
     <main className={montserrat.className}>
+      <FloatingNav navItems={navItems} />
       <section className="flex justify-around absolute w-full">
         <Image
           src="/vit.svg"
