@@ -1,7 +1,7 @@
 import Footer from "../components/footer/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
+import { FloatingNav } from "@/components/navbar/FloatingNav";
 
 export const metadata: Metadata = {
   title: "Bitwars-24",
@@ -13,12 +13,35 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navItems = [
+    {
+      name: "About",
+      link: "#about",
+    },
+    {
+      name: "Our Team",
+      link: "#team",
+    },
+    {
+      name: "Events",
+      link: "#events",
+    },
+    {
+      name: "Sponsors",
+      link: "#sponsors",
+    },
+    {
+      name: "FAQ",
+      link: "#faq",
+    },
+  ];
+
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden bg-black">
       <body className="bg-[url('/bg.svg')] bg-cover">
-        {/*<Navbar />*/}
+        <FloatingNav navItems={navItems} />
         {children}
-        {/*<Footer />*/}
+        <Footer />
       </body>
     </html>
   );

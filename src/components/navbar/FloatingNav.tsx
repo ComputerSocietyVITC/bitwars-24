@@ -8,6 +8,9 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const FloatingNav = ({
   navItems,
@@ -55,7 +58,8 @@ export const FloatingNav = ({
         }}
         className={cn(
           "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full bg-gradient-to-br from-[#100e17] via-[#103456] to-[#100e17] shadow-md shadow-[#292761] z-[5000] px-6 py-4 items-center justify-center space-x-4",
-          className
+          className,
+          montserrat.className
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
