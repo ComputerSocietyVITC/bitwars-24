@@ -25,7 +25,7 @@ const socialMediaLinks = [
 
 const SocialMediaGrid: React.FC = () => {
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-4">
+    <div className="grid grid-cols-4 gap-y-4">
       {socialMediaLinks.map((link, index) => (
         <a
           key={index}
