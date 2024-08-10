@@ -54,6 +54,22 @@ export default function Home() {
           </div>
         </div>*/}
 
+        <section>
+          <section className="flex justify-center pt-48">
+            <a
+              href="/BitwarsBrochure.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="border border-white/[0.2] flex flex-col items-center justify-end py-8 rounded-full px-12 cursor-pointer hover:scale-[120%] transition duration-300 bg-gradient-to-b from-[#130f1f] to-[#001c4fe5]">
+                <section className="text-3xl font-light mt-6">
+                  INTERESTED IN SPONSORING US?
+                </section>
+                <section className="text-3xl py-2 font-bold">CLICK HERE</section>
+              </div>
+            </a>
+          </section>
+        </section>
         {/* FAQ Section */}
         <div className="w-full py-24 min-h-screen" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
