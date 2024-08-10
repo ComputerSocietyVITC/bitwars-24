@@ -53,7 +53,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full bg-gradient-to-br from-[#100e17] via-[#103456] to-[#100e17] shadow-md shadow-[#292761] z-[5000] px-6 py-4 items-center justify-center space-x-4",
+          "grid grid-flow-col max-w-fit fixed top-10 inset-x-0 mx-auto border-b border-x border-slate-700 dark:border-white/[0.2] rounded-full bg-gradient-to-b from-[#100e17] to-[#031c37] shadow-md z-[5000] px-6 py-4 items-center justify-center space-x-4",
           className,
           montserrat.className
         )}
@@ -63,10 +63,10 @@ export const FloatingNav = ({
             key={`link=${navItem.name}`}
             href={navItem.link}
             className={cn(
-              "relative items-center flex space-x-1 text-slate-300 hover:text-slate-50"
+              "relative items-center flex text-slate-200 hover:text-white"
             )}
           >
-            <span className="block text-xs lg:text-base font-medium">
+            <span className="block text-lg px-8 border bg-slate-900 py-2 border-white/[0.1] hover:border-cyan-700 rounded-full font-medium">
               {navItem.name}
             </span>
           </Link>
