@@ -1,7 +1,5 @@
 import Image from "next/image";
 import FAQAccordion from "@/components/accordion/FAQAccordion";
-import Sponsor from "@/components/ui/sponsor";
-import { sponsorsList } from "@/lib/sponsorsList";
 import { Montserrat } from "next/font/google";
 import Main from "@/pages/main";
 import Showcase from "@/pages/showcase";
@@ -55,7 +53,7 @@ export default function Home() {
         </div>*/}
 
         <section>
-          <section className="flex justify-center pt-48">
+          <section id="sponsors" className="min-h-screen items-center flex justify-center pt-48">
             <a
               href="/BitwarsBrochure.pdf"
               target="_blank"
@@ -65,7 +63,9 @@ export default function Home() {
                 <section className="text-3xl font-light mt-6">
                   INTERESTED IN SPONSORING US?
                 </section>
-                <section className="text-3xl py-2 font-bold">CLICK HERE</section>
+                <section className="text-3xl py-2 font-bold">
+                  CLICK HERE
+                </section>
               </div>
             </a>
           </section>
