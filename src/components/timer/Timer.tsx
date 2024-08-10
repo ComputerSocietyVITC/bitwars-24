@@ -26,15 +26,15 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="md:scale-[70%] w-4/5 md:w-4/5 sm:w-full max-w-screen-lg h-full rounded-3xl skew-x-[-25deg] md:skew-x-[-10deg] sm:skew-x-[-5deg] mx-auto partial-border-gradient">
-      <div className="h-fit w-full bg-gradient-to-br from-[#100e17] via-[#0b1b3a] to-[#0d0b13] border-white/[0.2] rounded-xl text-white text-8xl text-center p-4 md:p-8">
+    <div className="md:scale-[70%] w-4/5 h-full md:w-4/5 sm:w-full max-w-screen-lg rounded-3xl skew-x-[-25deg] md:skew-x-[-10deg] sm:skew-x-[-5deg] mx-auto partial-border-gradient">
+      <div className="h-fit w-full bg-gradient-to-br from-[#100e17] via-[#0b1b3a] to-[#0d0b13] border-white/[0.2] rounded-xl text-white text-7xl text-center p-4 md:p-8">
         <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-2 items-center place-content-center">
           <div className="w-full mt-4">
             <div className="skew-x-[25deg] sm:skew-x-[5deg] md:skew-x-[10deg] w-full">
               <p id="day" className=" font-extrabold sm:text-6xl">
                 {days < 10 ? "0" + days : days}
               </p>
-              <section className="text-4xl md:text-3xl font-thin py-4 sm:text-2xl">
+              <section className="text-3xl md:text-3xl font-thin py-4 sm:text-2xl">
                 DAYS
               </section>
             </div>
@@ -44,7 +44,7 @@ const Timer = () => {
               <p id="hour" className=" font-extrabold sm:text-6xl">
                 {hours < 10 ? "0" + hours : hours}
               </p>
-              <section className="text-4xl md:text-3xl font-thin py-4 sm:text-2xl">
+              <section className="text-3xl md:text-3xl font-thin py-4 sm:text-2xl">
                 HOURS
               </section>
             </div>
@@ -54,7 +54,7 @@ const Timer = () => {
               <p id="minute" className="font-extrabold sm:text-6xl">
                 {minutes < 10 ? "0" + minutes : minutes}
               </p>
-              <section className="text-4xl md:text-3xl font-thin py-4 sm:text-2xl">
+              <section className="text-3xl md:text-3xl font-thin py-4 sm:text-2xl">
                 MINUTES
               </section>
             </div>
@@ -64,7 +64,7 @@ const Timer = () => {
               <p id="second" className="font-extrabold sm:text-6xl">
                 {seconds < 10 ? "0" + seconds : seconds}
               </p>
-              <section className="text-4xl md:text-3xl font-thin py-4 sm:text-2xl">
+              <section className="text-3xl md:text-3xl font-thin py-4 sm:text-2xl">
                 SECONDS
               </section>
             </div>
