@@ -15,6 +15,10 @@ export default function RootLayout({
 }>) {
   const navItems = [
     {
+      name: "Home",
+      link: "#home",
+    },
+    {
       name: "About",
       link: "#about",
     },
