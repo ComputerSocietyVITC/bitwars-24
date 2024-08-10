@@ -12,7 +12,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const Footer = () => {
   return (
     <div className={montserrat.className}>
-      <footer className="text-white p-8 w-full">
+      <footer className="text-white p-8 w-full pb-12">
         {/* Scroll to top button and line */}
         <div className="flex justify-center items-center mb-4">
           <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
