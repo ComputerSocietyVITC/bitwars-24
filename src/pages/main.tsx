@@ -4,7 +4,7 @@ import Timer from "@/components/timer/Timer";
 
 const Main: React.FC = () => {
   return (
-    <section className="h-screen border">
+    <section className="h-screen">
       <section className="w-full flex -mb-[6vh] justify-around">
         <Image
           src="/vit.svg"
