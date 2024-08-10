@@ -38,11 +38,11 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="border border-white/[0.2] flex flex-col items-center justify-end py-8 rounded-full px-12 cursor-pointer hover:scale-[120%] transition duration-300 bg-gradient-to-b from-[#130f1f] to-[#001c4fe5]">
-                <section className="text-3xl font-light mt-6">
+              <div className="sm:scale-[70%] border border-white/[0.2] flex flex-col items-center justify-end py-8 rounded-full px-12 cursor-pointer hover:scale-[120%] sm:hover:scale-[90%] transition duration-300 bg-gradient-to-b from-[#130f1f] to-[#001c4fe5]">
+                <section className="text-3xl font-light mt-6 text-center">
                   INTERESTED IN SPONSORING US?
                 </section>
-                <section className="text-3xl py-2 font-bold">
+                <section className="text-3xl py-2 font-bold sm:text-xl">
                   CLICK HERE
                 </section>
               </div>
