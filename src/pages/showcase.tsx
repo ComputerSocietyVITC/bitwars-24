@@ -35,10 +35,10 @@ const Showcase = () => {
                 problems. Join us for a transformative experience.
               </p>
               <section className="text-white text-start border border-slate-500 rounded-2xl p-4 md:text-sm">
-                <section className="font-semibold italic md:text-lg">
+                <section className="font-semibold md:text-lg">
                   Overview
                 </section>
-                <section className="">
+                <section className="italic">
                   - Competitive coding event where participants competed for the
                   top title Challenged participants&apos; coding skills and
                   strategic thinking <br />
