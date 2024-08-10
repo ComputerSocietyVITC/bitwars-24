@@ -8,19 +8,24 @@ import {
   faDiscord,
   faGithub,
   faYoutube,
-  faMedium,
+  faDev,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 
 const socialMediaLinks = [
-  { href: "https://linkedin.com", icon: faLinkedin },
-  { href: "https://twitter.com", icon: faTwitter },
-  { href: "https://instagram.com", icon: faInstagram },
-  { href: "https://telegram.com", icon: faTelegram },
-  { href: "https://discord.com", icon: faDiscord },
-  { href: "https://github.com", icon: faGithub },
-  { href: "https://youtube.com", icon: faYoutube },
-  { href: "https://medium.com", icon: faMedium },
+  {
+    href: "https://www.linkedin.com/company/ieee-computer-society-vit-chennai",
+    icon: faLinkedin,
+  },
+  { href: "https://twitter.com/ieeecsvit", icon: faTwitter },
+  { href: "https://instagram.com/compsoc.vitcc/", icon: faInstagram },
+  { href: "https://t.me/IEEE_CS_VIT_Chennai", icon: faTelegram },
+  { href: "https://discord.gg/6vkY3kcZnE", icon: faDiscord },
+  { href: "https://github.com/ComputerSocietyVITC", icon: faGithub },
+  {
+    href: "https://www.youtube.com/channel/UCOgwDinZGau4rwv3swAe-nQ",
+    icon: faYoutube,
+  },
+  { href: "https://dev.to/ieeecsvitc", icon: faDev },
 ];
 
 const SocialMediaGrid: React.FC = () => {
