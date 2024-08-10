@@ -19,15 +19,11 @@ export default function RootLayout({
       link: "#home",
     },
     {
-      name: "About",
+      name: "About Us",
       link: "#about",
     },
     {
-      name: "Our Team",
-      link: "#team",
-    },
-    {
-      name: "Events",
+      name: "Event",
       link: "#events",
     },
     {
