@@ -15,15 +15,15 @@ export default function RootLayout({
 }>) {
   const navItems = [
     {
-      name: "About",
+      name: "Home",
+      link: "#home",
+    },
+    {
+      name: "About Us",
       link: "#about",
     },
     {
-      name: "Our Team",
-      link: "#team",
-    },
-    {
-      name: "Events",
+      name: "Event",
       link: "#events",
     },
     {
