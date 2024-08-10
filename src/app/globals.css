@@ -43,9 +43,9 @@ body {
 .accord-lines {
   background: linear-gradient(
     270.01deg,
-    #0f1d29 23.04%,
+    #0f1d2993 23.04%,
     #114554 67.69%,
-    #101019 90.29%
+    #1010197b 90.29%
   );
 }
 
@@ -55,7 +55,7 @@ body {
   left: 0;
   border: 2px;
 
-  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
+  background: linear-gradient(#0f1d296c 23.04%, #114554 67.69%, #10101976 90.29%);
 }
 
 .accord-velines {
@@ -64,7 +64,7 @@ body {
   right: 0;
   border: 2px;
 
-  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
+  background: linear-gradient(#0f1d2972 23.04%, #114554 67.69%, #10101971 90.29%);
 }
 
 

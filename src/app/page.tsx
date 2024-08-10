@@ -38,8 +38,7 @@ export default function Home() {
       <div className="w-4/5 md:w-full sm:w-full mx-auto px-4 text-white">
         <Main />
         <Aboutus />
-        {/* Events Section */}
-        {/*<Showcase />*/}
+        <Showcase />
 
         {/* Sponsors Section */}
         {/*<div className="w-full" id="sponsors">
@@ -56,7 +55,7 @@ export default function Home() {
         </div>*/}
 
         {/* FAQ Section */}
-        <div className="w-full py-24" id="faq">
+        <div className="w-full py-24 min-h-screen" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
             Frequently Asked Questions
           </p>
