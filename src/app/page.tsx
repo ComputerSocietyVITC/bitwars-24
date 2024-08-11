@@ -37,7 +37,9 @@ export default function Home() {
               </div> */}
               <div className="flex justify-center items-center my-24">
                 <div className="flex items-center text-center sm:flex-col">
-                  <div className="text-xl pr-12 sm:pb-8 w-full sm:pr-0">Powered by</div>
+                  <div className="text-xl pr-12 sm:pb-8 w-full sm:pr-0">
+                    Powered by
+                  </div>
                   <Image
                     alt="unstop logo"
                     height={150}
@@ -55,12 +57,12 @@ export default function Home() {
             >
               <Button
                 borderRadius="9999px"
-                className="border border-white/[0.2] flex flex-col items-center justify-end py-8 px-12 cursor-pointer  transition duration-300"
+                className="border border-white/[0.2] flex flex-col items-center justify-end py-8 px-12 cursor-default transition duration-300"
               >
                 <section className="text-3xl font-light pt-4 text-center">
                   INTERESTED IN SPONSORING US?
                 </section>
-                <section className="text-3xl pt-4 font-bold sm:text-xl">
+                <section className="text-2xl mt-4 font-bold sm:text-xl rounded-full px-6 p-2 bg-slate-950 hover:bg-blue-950/[0.2] shadow-md hover:shadow-cyan-900 cursor-pointer border border-cyan-200/[0.1]">
                   CLICK HERE
                 </section>
               </Button>
