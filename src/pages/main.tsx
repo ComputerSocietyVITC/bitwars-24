@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Timer from "@/components/timer/Timer";
 import Link from "next/link";
+import { Button } from "@/components/ui/moving-border";
 
 const Main: React.FC = () => {
   return (
@@ -51,9 +52,12 @@ const Main: React.FC = () => {
             <section>VIT Chennai</section>
           </section>
           <Link href="https://unstop.com/p/bitwars-20-vit-chennai-1100706">
-            <section className="rounded-full bg-blue-100 font-normal sm:text-lg px-8 py-2 text-2xl text-blue-950 hover:scale-[95%] scale-[90%] transition duration-300">
+            <Button
+              borderRadius="9999px"
+              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 py-4 px-8 font-medium sm:text-lg text-2xl hover:scale-[103%] transition duration-300"
+            >
               Register Here →
-            </section>
+            </Button>
           </Link>
         </section>
       </section>

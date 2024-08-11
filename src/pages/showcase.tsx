@@ -35,7 +35,9 @@ const Showcase = () => {
                 problems. Join us for a transformative experience.
               </p>
               <section className="text-white text-start border border-slate-500 rounded-2xl p-4 md:text-sm">
-                <section className="font-semibold md:text-lg">Overview</section>
+                <section className="font-semibold md:text-lg pb-1">
+                  Overview
+                </section>
                 <section className="italic">
                   - Competitive coding event where participants competed for the
                   top title Challenged participants&apos; coding skills and
