@@ -21,3 +21,4 @@ const Sponsor = ({ name, image }: Props) => {
 };
 
 export default Sponsor;
+
