@@ -46,8 +46,8 @@ const Main: React.FC = () => {
           </div>
         </div>
       </div>
-      <section className="w-full grid grid-rows-1 place-items-center text-blue-100 text-3xl">
-        <section className="flex sm:flex-col gap-10 sm:gap-2 px-16 sm:px-2 sm:w-full sm:text-xl text-center font-medium items-center p-6 rounded-xl border-slate-700/[0.6] bg-gradient-to-b to-[#100e17] from-[#071531]">
+      <section className="sm:mb-[7vh] w-full grid grid-rows-1 place-items-center text-blue-100 text-3xl">
+        <section className="flex sm:flex-col gap-10 sm:gap-2 px-16 sm:px-6 sm:text-xl text-center font-medium items-center p-6 sm:p-4 rounded-xl border-slate-700/[0.6] bg-gradient-to-b to-[#100e17] from-[#071531]">
           <section className="sm:justify-center sm:flex sm:w-full items-center sm:text-[4vw]">
             <section className="py-2">6th September, 2024 </section>
             <section className="hidden sm:block"> &nbsp; - &nbsp; </section>
