@@ -66,9 +66,15 @@ export const FloatingNav = ({
               "relative items-center flex text-slate-200 hover:text-white"
             )}
           >
-            <span className="block text-lg px-8 border bg-slate-900 py-2 border-white/[0.1] hover:border-cyan-700 rounded-full font-medium">
+            <span className="block sm:text-sm text-md lg:text-lg px-8 border bg-slate-900 py-2 border-white/[0.1] hover:border-cyan-700 rounded-full font-medium sm:hidden">
               {navItem.name}
             </span>
+            <div
+              key={`${navItem.name}`}
+              className="hidden sm:inline-block text-sm"
+            >
+              {navItem.name}
+            </div>
           </Link>
         ))}
       </motion.div>
