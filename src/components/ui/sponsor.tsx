@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 interface Props {
   name: string;
@@ -9,7 +8,7 @@ interface Props {
 const Sponsor = ({ name, image }: Props) => {
   return (
     <div className="flex flex-col items-center justify-center text-center p-4">
-      <Image
+      <img
         src={image}
         alt={name}
         className="w-24 h-auto sm:w-12 md:w-16 mb-2 basis-3/4"
