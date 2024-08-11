@@ -11,7 +11,7 @@ const Aboutus = () => {
               alt=""
               height={500}
               width={600}
-              src="/oc.jpg"
+              src="/oc.webp"
               className="w-full px-8 rounded-3xl object-contain hidden sm:block pt-8"
             />
             <p className="text-white text-justify py-12 px-8 md:text-sm">
@@ -29,7 +29,7 @@ const Aboutus = () => {
             alt=""
             height={500}
             width={600}
-            src="/oc.jpg"
+            src="/oc.webp"
             className="w-[35vw] rounded-xl object-contain sm:hidden"
           />
         </div>

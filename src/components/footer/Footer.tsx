@@ -28,7 +28,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row lg:flex-row justify-center">
           {/* IEEE logo */}
           <div className="flex items-center justify-center basis-1/5">
-            <Image src="/compsoc.png" alt="logo2" width={280} height={80} />
+            <Image src="/compsoc.webp" alt="logo2" width={280} height={80} />
           </div>
 
           {/* Menu */}

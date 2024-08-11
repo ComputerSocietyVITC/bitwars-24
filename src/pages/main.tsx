@@ -15,7 +15,7 @@ const Main: React.FC = () => {
           className="object-contain h-[7vh] w-full sm:w-28"
         />
         <Image
-          src="/compsoc.png"
+          src="/compsoc.webp"
           width={150}
           height={100}
           alt=""
@@ -29,11 +29,11 @@ const Main: React.FC = () => {
           className="object-contain h-[5vh] w-full sm:w-28"
         />
       </section>
-      <div className="col-span-3  w-full">
+      <div className="col-span-3 w-full">
         <div className="flex items-center ">
           <div className=" mx-auto  w-4/5 flex flex-col" id="home">
             <Image
-              src="/bitwarsLogo.png"
+              src="/bitwarsLogo.webp"
               alt="logo"
               height={500}
               width={500}
