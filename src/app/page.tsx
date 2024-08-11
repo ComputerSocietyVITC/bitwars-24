@@ -5,7 +5,6 @@ import Showcase from "@/pages/showcase";
 import Aboutus from "@/pages/aboutus";
 import Image from "next/image";
 import { Button } from "@/components/ui/moving-border";
-import { GlareCard } from "@/components/ui/glarecard";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
