@@ -36,8 +36,8 @@ export default function Home() {
                 ))}
               </div> */}
               <div className="flex justify-center items-center my-24">
-                <div className="flex items-center text-center sm:grid-cols-1">
-                  <div className="text-xl pr-12 sm:pb-8 w-full">Powered by</div>
+                <div className="flex items-center text-center sm:flex-col">
+                  <div className="text-xl pr-12 sm:pb-8 w-full sm:pr-0">Powered by</div>
                   <Image
                     alt="unstop logo"
                     height={150}
