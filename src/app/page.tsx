@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className={montserrat.className}>
       <Main />
-      <div className="w-4/5 md:w-full sm:w-full mx-auto px-4 text-white">
+      <div className="w-4/5 mt-6 md:w-full sm:w-full mx-auto px-4 text-white">
         <Aboutus />
         <Showcase />
 
