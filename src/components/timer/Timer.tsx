@@ -26,7 +26,7 @@ const Timer = () => {
   }, []);
 
   return (
-    <div className="md:scale-[70%] w-4/5 h-full md:w-4/5 sm:w-full max-w-screen-lg rounded-3xl skew-x-[-25deg] md:skew-x-[-10deg] sm:skew-x-[-5deg] mx-auto partial-border-gradient">
+    <div className="md:scale-[70%] sm:scale-[90%] w-4/5 h-full md:w-4/5 sm:w-full max-w-screen-lg rounded-3xl skew-x-[-25deg] md:skew-x-[-10deg] sm:skew-x-[-5deg] mx-auto partial-border-gradient">
       <div className="h-fit w-full bg-gradient-to-br from-[#100e17] via-[#0b1b3a] to-[#0d0b13] border-white/[0.2] rounded-xl text-white text-7xl text-center p-4 md:p-8">
         <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-2 items-center place-content-center">
           <div className="w-full mt-4">
