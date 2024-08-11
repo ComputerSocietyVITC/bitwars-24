@@ -90,3 +90,7 @@ body {
   padding: 3px;
   box-sizing: border-box;
 }
+
+.button-gradient {
+  background: radial-gradient(rgb(56 189 248) 40%, transparent 60%);
+}

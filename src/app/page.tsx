@@ -4,6 +4,7 @@ import Main from "@/pages/main";
 import Showcase from "@/pages/showcase";
 import Aboutus from "@/pages/aboutus";
 import Image from "next/image";
+import { Button } from "@/components/ui/moving-border";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -52,14 +53,17 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="sm:scale-[70%] border border-white/[0.2] flex flex-col items-center justify-end py-8 rounded-full px-12 cursor-pointer hover:scale-[105%] sm:hover:scale-[90%] transition duration-300 bg-gradient-to-b from-[#130f1f] to-[#001c4fe5]">
+              <Button
+                borderRadius="9999px"
+                className="sm:scale-[70%] border border-white/[0.2] flex flex-col items-center justify-end py-8 px-12 cursor-pointer hover:scale-[103%] sm:hover:scale-[90%] transition duration-300"
+              >
                 <section className="text-3xl font-light pt-4 text-center">
                   INTERESTED IN SPONSORING US?
                 </section>
                 <section className="text-3xl pt-4 font-bold sm:text-xl">
                   CLICK HERE
                 </section>
-              </div>
+              </Button>
             </a>
           </section>
         </section>
