@@ -46,7 +46,7 @@ const Main: React.FC = () => {
       <section className="w-full grid grid-rows-1 place-items-center text-blue-100 text-3xl">
         <section className="mb-12 flex sm:flex-col gap-10 sm:gap-2 px-16 sm:text-xl text-center font-medium items-center border p-6 rounded-xl border-slate-700/[0.6] bg-gradient-to-b to-[#100e17] from-[#071531]">
           <section>
-            <section className="py-2">6th September, 2024 </section>
+            <section className="py-2">6th September, 2024</section>
             <section>VIT Chennai</section>
           </section>
           <Link href="https://unstop.com/p/bitwars-20-vit-chennai-1100706">
