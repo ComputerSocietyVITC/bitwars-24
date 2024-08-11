@@ -3,8 +3,6 @@ import { Montserrat } from "next/font/google";
 import Main from "@/pages/main";
 import Showcase from "@/pages/showcase";
 import Aboutus from "@/pages/aboutus";
-import { sponsorsList } from "@/lib/sponsorsList";
-import Sponsor from "@/components/ui/sponsor";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -36,9 +34,16 @@ export default function Home() {
                 ))}
               </div> */}
               <div className="flex justify-center items-center my-24">
-                <div className="grid grid-cols-2 items-center text-center sm:grid-cols-1">
-                  <div className="text-2xl sm:pb-8">Powered by</div>
-                  <img src="/unstop-logo.svg" className="w-auto h-24" />
+                <div className="flex items-center text-center sm:grid-cols-1">
+                  <div className="text-xl pr-12 sm:pb-8 w-full">
+                    Powered by
+                  </div>
+                  <img
+                    height={150}
+                    width={150}
+                    src="/unstop-logo.svg"
+                    className="w-auto h-24"
+                  />
                 </div>
               </div>
             </div>
