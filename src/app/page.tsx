@@ -55,7 +55,7 @@ export default function Home() {
             >
               <Button
                 borderRadius="9999px"
-                className="sm:scale-[70%] border border-white/[0.2] flex flex-col items-center justify-end py-8 px-12 cursor-pointer hover:scale-[103%] sm:hover:scale-[90%] transition duration-300"
+                className="border border-white/[0.2] flex flex-col items-center justify-end py-8 px-12 cursor-pointer  transition duration-300"
               >
                 <section className="text-3xl font-light pt-4 text-center">
                   INTERESTED IN SPONSORING US?

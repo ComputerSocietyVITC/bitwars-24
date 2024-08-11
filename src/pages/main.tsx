@@ -54,7 +54,7 @@ const Main: React.FC = () => {
           <Link href="https://unstop.com/p/bitwars-20-vit-chennai-1100706">
             <Button
               borderRadius="9999px"
-              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 py-4 px-8 font-medium sm:text-lg text-2xl hover:scale-[103%] transition duration-300"
+              className="bg-slate-900/[0.1] text-white border-neutral-200/[0.2] py-4 px-8 font-medium sm:text-lg text-2xl hover:scale-[103%] transition duration-300"
             >
               Register Here →
             </Button>
