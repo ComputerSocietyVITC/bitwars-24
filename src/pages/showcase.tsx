@@ -15,7 +15,7 @@ const Showcase = () => {
               height={500}
               width={600}
               src="/bitwars.jpg"
-              className="w-[35vw] rounded-xl object-contain sm:hidden"
+              className="w-[35vw] rounded-xl object-contain sm:hidden relative z-10"
             />
             <div className="shadow-md shadow-[#292761] flex flex-col items-center w-full rounded-2xl text-center bg-gradient-to-br from-[#100e1773] via-[#10345676] to-[#100e177e] border border-white/[0.2] lg:px-12 px-8 py-12">
               <Image
@@ -23,7 +23,7 @@ const Showcase = () => {
                 height={500}
                 width={600}
                 src="/bitwars.jpg"
-                className="w-full px-8 sm:px-0 rounded-3xl object-contain hidden sm:block pt-8"
+                className="w-full px-8 sm:px-0 rounded-3xl object-contain hidden sm:block pt-8 relative z-10"
               />
               <p className="text-white text-justify md:text-sm my-8 ">
                 BITWARS 2.0, VIT Chennai&apos;s second edition of the biggest

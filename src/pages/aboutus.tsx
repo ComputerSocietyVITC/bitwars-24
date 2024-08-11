@@ -12,7 +12,7 @@ const Aboutus = () => {
               height={500}
               width={600}
               src="/oc.jpg"
-              className="w-full px-8 rounded-3xl object-contain hidden sm:block pt-8"
+              className="w-full px-8 rounded-3xl object-contain hidden sm:block pt-8 relative z-10"
             />
             <p className="text-white text-justify py-12 px-8 md:text-sm">
               VIT Chennai, established in 2010, is a leading private institution
@@ -30,7 +30,7 @@ const Aboutus = () => {
             height={500}
             width={600}
             src="/oc.jpg"
-            className="w-[35vw] rounded-xl object-contain sm:hidden"
+            className="w-[35vw] rounded-xl object-contain sm:hidden relative z-10"
           />
         </div>
       </div>

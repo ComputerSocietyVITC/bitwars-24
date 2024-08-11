@@ -2,6 +2,7 @@
   width: 1px;
   height: 1px;
   background: transparent;
+  z-index: 0;
   box-shadow:
     718px 1001px #fff,
     1749px 542px #fff,
@@ -712,6 +713,7 @@
   width: 1px;
   height: 1px;
   background: transparent;
+  z-index: 0;
   box-shadow:
     718px 1001px #fff,
     1749px 542px #fff,
@@ -1419,6 +1421,7 @@
   width: 2px;
   height: 2px;
   background: transparent;
+  z-index: 0;
   box-shadow:
     1613px 41px #fff,
     263px 1311px #fff,
@@ -1629,6 +1632,7 @@
   width: 2px;
   height: 2px;
   background: transparent;
+  z-index: 0;
   box-shadow:
     1613px 41px #fff,
     263px 1311px #fff,
@@ -1836,6 +1840,7 @@
   width: 3px;
   height: 3px;
   background: transparent;
+  z-index: 0;
   box-shadow:
     1317px 635px #fff,
     445px 995px #fff,
@@ -1946,6 +1951,7 @@
   width: 3px;
   height: 3px;
   background: transparent;
+  z-index: 0;
   box-shadow:
     1317px 635px #fff,
     445px 995px #fff,
@@ -2047,26 +2053,6 @@
     1686px 1155px #fff,
     890px 1645px #fff,
     563px 1428px #fff;
-}
-
-#title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  color: #fff;
-  text-align: center;
-  font-family: "lato", sans-serif;
-  font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
-}
-#title span {
-  background: -webkit-linear-gradient(white, #38495a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 @keyframes animStar {

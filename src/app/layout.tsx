@@ -41,8 +41,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth overflow-x-hidden bg-black">
       <body className="bg-[url('/bg.svg')] bg-cover">
         <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
+        <div id="stars-2"></div>
+        <div id="stars-3"></div>
         <FloatingNav navItems={navItems} />
         {children}
         <Footer />
