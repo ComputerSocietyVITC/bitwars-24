@@ -31,10 +31,7 @@ const Main: React.FC = () => {
       </section>
       <div className="col-span-3  w-full">
         <div className="flex items-center ">
-          <div
-            className=" mx-auto  w-4/5 flex flex-col"
-            id="home"
-          >
+          <div className=" mx-auto  w-4/5 flex flex-col" id="home">
             <Image
               src="/bitwarsLogo.png"
               alt="logo"
