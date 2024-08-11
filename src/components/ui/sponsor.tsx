@@ -11,9 +11,11 @@ const Sponsor = ({ name, image }: Props) => {
       <img
         src={image}
         alt={name}
-        className="w-12 h-auto sm:w-12 md:w-16 mb-2"
+        className="w-24 h-auto sm:w-12 md:w-16 mb-2 basis-3/4"
       />
-      <p className="text-sm sm:text-base md:text-lg lg:text-xl">{name}</p>
+      <p className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold pt-4 basis-1/4">
+        {name}
+      </p>
     </div>
   );
 };
