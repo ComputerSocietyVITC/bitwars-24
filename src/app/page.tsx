@@ -26,7 +26,7 @@ export default function Home() {
               <p className="text-center font-extrabold text-5xl">
                 Our Sponsors
               </p>
-              <div className="grid grid-cols-2 gap-4 mt-16 text-center border-[#104456] border-2 py-12">
+              {/* <div className="grid grid-cols-2 gap-4 mt-16 text-center border-[#104456] border-2 py-12">
                 {sponsorsList.map((sponsor, index) => (
                   <Sponsor
                     key={sponsor.name}
@@ -34,15 +34,20 @@ export default function Home() {
                     image={sponsor.image}
                   />
                 ))}
+              </div> */}
+              <div className="flex justify-center items-center my-24">
+                <div className="grid grid-cols-2 items-center text-center sm:grid-cols-1">
+                  <div className="text-2xl sm:pb-8">Powered by</div>
+                  <img src="/unstop-logo.svg" className="w-auto h-24" />
+                </div>
               </div>
             </div>
             <a
               href="/BitwarsBrochure.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-12"
             >
-              <div className="sm:scale-[70%] border border-white/[0.2] flex flex-col items-center justify-end py-8 rounded-full px-12 cursor-pointer hover:scale-[110%] sm:hover:scale-[90%] transition duration-300 bg-gradient-to-b from-[#130f1f] to-[#001c4fe5]">
+              <div className="sm:scale-[70%] border border-white/[0.2] flex flex-col items-center justify-end py-8 rounded-full px-12 cursor-pointer hover:scale-[105%] sm:hover:scale-[90%] transition duration-300 bg-gradient-to-b from-[#130f1f] to-[#001c4fe5]">
                 <section className="text-3xl font-light pt-4 text-center">
                   INTERESTED IN SPONSORING US?
                 </section>
@@ -53,6 +58,7 @@ export default function Home() {
             </a>
           </section>
         </section>
+
         {/* FAQ Section */}
         <div className="w-full py-24 min-h-screen" id="faq">
           <p className="text-center font-extrabold text-5xl py-24">
