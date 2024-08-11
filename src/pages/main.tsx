@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Timer from "@/components/timer/Timer";
+import Link from "next/link";
 
 const Main: React.FC = () => {
   return (
@@ -42,28 +43,18 @@ const Main: React.FC = () => {
           </div>
         </div>
       </div>
-      <section className=" w-full grid grid-cols-3 place-items-center invisible">
-        <Image
-          src="/vit.svg"
-          alt=""
-          width={500}
-          height={500}
-          className="object-contain h-[7vh] w-full sm:w-28"
-        />
-        <Image
-          src="/compsoc.png"
-          width={150}
-          height={100}
-          alt=""
-          className=" object-contain h-[7vh] w-full ml-6 sm:pl-5"
-        />
-        <Image
-          src="/swc.svg"
-          width={150}
-          height={100}
-          alt=""
-          className="object-contain h-[5vh] w-full sm:w-28"
-        />
+      <section className=" place-self-center w-full grid grid-rows-2 place-items-center text-blue-100 text-3xl h-[15vh]">
+        <section className="flex gap-10 px-16 text-center font-medium items-center border p-6 rounded-xl border-slate-700/[0.6] bg-gradient-to-b to-[#100e17] from-[#071531]">
+          <section>
+            <section className="py-2">6th September, 2024 </section>
+            <section>VIT Chennai</section>
+          </section>
+          <Link href="https://unstop.com/p/bitwars-20-vit-chennai-1100706">
+            <section className="rounded-full bg-blue-100 font-normal px-8 py-2 text-2xl text-blue-950 hover:scale-[95%] scale-[90%] transition duration-300">
+              Register Here →
+            </section>
+          </Link>
+        </section>
       </section>
     </section>
   );
