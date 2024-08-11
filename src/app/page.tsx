@@ -31,7 +31,7 @@ export default function Home() {
         <section>
           <section
             id="sponsors"
-            className="min-h-screen items-center flex justify-center pt-48"
+            className="items-center flex justify-center pt-48"
           >
             <a
               href="/BitwarsBrochure.pdf"
