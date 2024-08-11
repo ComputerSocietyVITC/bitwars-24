@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Main: React.FC = () => {
   return (
-    <section className="h-screen grid">
+    <section className="h-screen grid grid-cols-1">
       <section className="w-full grid grid-cols-3 place-items-center">
         <Image
           src="/vit.svg"
@@ -29,7 +29,7 @@ const Main: React.FC = () => {
           className="object-contain h-[5vh] w-full sm:w-28"
         />
       </section>
-      <div className="grid-cols-1 place-self-center w-full">
+      <div className="col-span-3 place-self-center w-full">
         <div className="flex items-center ">
           <div className=" self-center mx-auto  w-4/5 flex flex-col" id="home">
             <Image
@@ -43,8 +43,8 @@ const Main: React.FC = () => {
           </div>
         </div>
       </div>
-      <section className=" place-self-center w-full grid grid-rows-2 place-items-center text-blue-100 text-3xl h-[15vh]">
-        <section className="flex gap-10 px-16 text-center font-medium items-center border p-6 rounded-xl border-slate-700/[0.6] bg-gradient-to-b to-[#100e17] from-[#071531]">
+      <section className="w-full grid grid-rows-1 place-items-center text-blue-100 text-3xl">
+        <section className="mb-12 flex sm:flex-col gap-10 sm:gap-2 px-16 sm:text-xl text-center font-medium items-center border p-6 rounded-xl border-slate-700/[0.6] bg-gradient-to-b to-[#100e17] from-[#071531]">
           <section>
             <section className="py-2">6th September, 2024 </section>
             <section>VIT Chennai</section>
