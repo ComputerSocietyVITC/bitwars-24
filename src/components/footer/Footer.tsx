@@ -12,7 +12,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const Footer = () => {
   return (
     <div className={montserrat.className}>
-      <footer className="text-white p-8 w-full">
+      <footer className="text-white p-8 w-full pb-12">
         {/* Scroll to top button and line */}
         <div className="flex justify-center items-center mb-4">
           <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
@@ -27,16 +27,16 @@ const Footer = () => {
         {/* Footer content */}
         <div className="flex flex-col md:flex-row lg:flex-row justify-center">
           {/* IEEE logo */}
-          <div className="flex items-center justify-center basis-1/3">
+          <div className="flex items-center justify-center basis-1/5">
             <Image src="/compsoc.png" alt="logo2" width={280} height={80} />
           </div>
 
           {/* Menu */}
-          <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/6">
+          <div className="space-y-4 mt-10 flex flex-col justify-center items-center basis-1/5">
             <h3 className="text-xl font-semibold items-center md:text-left">
               <div className="relative">
                 Menu
-                <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
+                <hr className="absolute w-full h-0.5 border-transparent bg-gradient-to-r from-transparent via-[#116677]" />
               </div>
             </h3>
             <ul className="space-y-2 text-center md:text-left">
@@ -53,7 +53,7 @@ const Footer = () => {
             <h3 className="text-xl font-semibold">
               <div className="relative">
                 Address
-                <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
+                <hr className="absolute w-full h-0.5 border-transparent bg-gradient-to-r from-transparent via-[#116677]" />
               </div>
             </h3>
             <p className="text-center">
@@ -63,14 +63,25 @@ const Footer = () => {
               <br />
               Tamil Nadu 600127
             </p>
+            <h3 className="text-xl font-semibold">
+              <div className="relative">
+                Email
+                <hr className="absolute w-full h-0.5 border-transparent bg-gradient-to-r from-transparent via-[#116677]" />
+              </div>
+            </h3>
+            <p className="text-center">
+              <a href="mailto:ieeecomputersociety@vit.ac.in">
+                ieeecomputersociety@vit.ac.in
+              </a>
+            </p>
           </div>
 
           {/* Social Media */}
-          <div className="space-y-4 flex flex-col text-center md:text-left justify-center items-center mt-10">
+          <div className="space-y-4 flex flex-col text-center md:text-left justify-center items-center mt-10 basis-1/5">
             <h3 className="text-xl font-semibold">
               <div className="relative">
                 Social Media
-                <hr className="absolute w-full h-1 border-transparent bg-gradient-to-r from-transparent via-[#114554]" />
+                <hr className="absolute w-full h-0.5 border-transparent bg-gradient-to-r from-transparent via-[#116677]" />
               </div>
             </h3>
             <SocialMediaGrid />
