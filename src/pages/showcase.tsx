@@ -6,7 +6,7 @@ const Showcase = () => {
     <>
       <div className="w-full" id="events">
         <div className="w-full flex flex-col">
-          <p className="mt-24 font-extrabold text-5xl text-center">
+          <p className="mt-6 font-extrabold text-5xl text-center">
             Event Showcase
           </p>
           <div className="flex gap-[5vw] items-center mt-8">
