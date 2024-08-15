@@ -26,8 +26,8 @@ const FAQAccordion = () => {
               Bitwars 2.0 is a premier offline competitive coding event where
               participants showcase their expertise through a series of
               challenging coding problems. These carefully crafted challenges
-              are designed to test and elevate the participants' proficiency in
-              the field of computing.
+              are designed to test and elevate the participants&apos;
+              proficiency in the field of computing.
             </AccordionContent>
           </AccordionItem>
 
@@ -112,8 +112,8 @@ const FAQAccordion = () => {
               Bitwars 2.0?
             </AccordionTrigger>
             <AccordionContent className="text-white text-left accord-cont p-4 leading-relaxed">
-              The event will feature a special "Algorithm Showdown" presented by
-              Mr. Manas Tiwari, a Software Engineer at Microsoft.
+              The event will feature a special &quot;Algorithm Showdown&quot;
+              presented by Mr. Manas Tiwari, a Software Engineer at Microsoft.
             </AccordionContent>
           </AccordionItem>
 
@@ -124,8 +124,8 @@ const FAQAccordion = () => {
               event?
             </AccordionTrigger>
             <AccordionContent className="text-white text-left accord-cont p-4 leading-relaxed">
-              Yes, participants can try the "Logic Leap" questions available on
-              the Unstop website to prepare for the event.
+              Yes, participants can try the &quot;Logic Leap&quot; questions
+              available on the Unstop website to prepare for the event.
             </AccordionContent>
           </AccordionItem>
 
@@ -143,7 +143,6 @@ const FAQAccordion = () => {
               >
                 Unstop Registration Link
               </a>
-              .
             </AccordionContent>
           </AccordionItem>
         </div>
