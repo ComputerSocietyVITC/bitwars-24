@@ -135,10 +135,12 @@ const FAQAccordion = () => {
               When is the event scheduled, and how can I register?
             </AccordionTrigger>
             <AccordionContent className="text-white text-left accord-cont p-4 leading-relaxed">
-              Bitwars 2.0 is scheduled for 6th September 2024. You can register
-              for the event through the following link: &nbsp;
+              <section>
+                Bitwars 2.0 is scheduled for 6th September 2024. You can
+                register for the event through the following link: &nbsp;
+              </section>
               <a
-                href="https://unstop.com/p/bi-20-vai-11007"
+                href="https://unstop.com/p/bitwars-20-vit-chennai-1100706"
                 className="text-blue-500 underline"
               >
                 Unstop Registration Link
