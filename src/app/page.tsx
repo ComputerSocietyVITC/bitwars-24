@@ -5,6 +5,7 @@ import Showcase from "@/pages/showcase";
 import Aboutus from "@/pages/aboutus";
 import Image from "next/image";
 import { Button } from "@/components/ui/moving-border";
+import Link from "next/link";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -37,16 +38,18 @@ export default function Home() {
               </div> */}
               <div className="flex justify-center items-center my-24">
                 <div className="flex items-center text-center sm:flex-col">
-                  <div className="text-xl pr-12 sm:pb-8 w-full sm:pr-0">
+                  <div className="z-50 text-xl pr-12 sm:pb-8 w-full sm:pr-0 text-left">
                     Powered by
                   </div>
-                  <Image
-                    alt="unstop logo"
-                    height={150}
-                    width={150}
-                    src="/unstop-logo.svg"
-                    className="w-auto h-24"
-                  />
+                  <Link className="w-full z-50 h-28" href="https://unstop.com/about">
+                    <Image
+                      alt="unstop logo"
+                      height={150}
+                      width={150}
+                      src="/unstop-logo.svg"
+                      className="w-auto h-full"
+                    />
+                  </Link>
                 </div>
               </div>
             </div>

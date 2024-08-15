@@ -21,9 +21,11 @@ body {
 
 .accord {
   position: relative;
+  z-index: 500;
 }
 
 .accord-cont {
+  z-index: 500;
   width: 100%;
   min-height: 110px;
   top: 3431.5px;
@@ -33,7 +35,7 @@ body {
   border-bottom: 3px solid;
 
   border-image-source: linear-gradient(
-    270.01deg,
+    270deg,
     #0f1d29 23.04%,
     #114554 67.69%,
     #101019 90.29%
@@ -41,33 +43,34 @@ body {
 }
 
 .accord-lines {
+  z-index: 500;
   background: linear-gradient(
     270.01deg,
-    #0f1d2993 23.04%,
+    #0f1d29 23.04%,
     #114554 67.69%,
-    #1010197b 90.29%
+    #101019 90.29%
   );
 }
 
 .accord-vlines {
+  z-index: 500;
   position: absolute;
   top: 0;
   left: 0;
   border: 2px;
 
-  background: linear-gradient(#0f1d296c 23.04%, #114554 67.69%, #10101976 90.29%);
+  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
 }
 
 .accord-velines {
+  z-index: 500;
   position: absolute;
   top: 0;
   right: 0;
   border: 2px;
 
-  background: linear-gradient(#0f1d2972 23.04%, #114554 67.69%, #10101971 90.29%);
+  background: linear-gradient(#0f1d29 23.04%, #114554 67.69%, #101019 90.29%);
 }
-
-
 
 .partial-border-gradient {
   background: linear-gradient(
