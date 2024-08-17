@@ -53,7 +53,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "grid grid-flow-col max-w-fit fixed top-10 inset-x-0 mx-auto border-b border-x border-slate-700 dark:border-white/[0.2] rounded-full bg-gradient-to-b from-[#100e17] to-[#031c37] shadow-md z-[5000] px-6 py-4 items-center justify-center space-x-4",
+          "grid grid-flow-col max-w-fit fixed top-10 inset-x-0 mx-auto border-b border-x border-slate-700  dark:border-white/[0.2] rounded-full bg-gradient-to-b from-[#100e17] to-[#031c37] shadow-md z-[5000] px-6 py-4 items-center justify-center space-x-4",
           className,
           montserrat.className
         )}
@@ -66,7 +66,7 @@ export const FloatingNav = ({
               "relative items-center flex text-slate-200 hover:text-white"
             )}
           >
-            <span className="block sm:text-sm text-md lg:text-lg px-8 border bg-slate-900 py-2 border-white/[0.1] hover:border-cyan-700 rounded-full font-medium sm:hidden">
+            <span className="block sm:text-sm text-md lg:text-lg px-8 border bg-slate-900 py-2 border-white/[0.1] hover:border-cyan-700/[0.7] hover:bg-black/[0.2] rounded-full font-medium sm:hidden">
               {navItem.name}
             </span>
             <div
