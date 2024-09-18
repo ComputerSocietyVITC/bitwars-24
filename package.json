@@ -20,7 +20,7 @@
     "framer-motion": "^11.3.23",
     "install": "^0.13.0",
     "lucide-react": "^0.408.0",
-    "next": "14.2.4",
+    "next": "14.2.10",
     "npm": "^10.8.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
